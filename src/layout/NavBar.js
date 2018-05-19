@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import {Nav, Navbar, NavItem} from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
+import './NavBar.css';
 
 class NavBar extends Component {
   render() {
     return (
-      <Navbar inverse collapseOnSelect>
+      <Navbar inverse collapseOnSelect className="nav">
         <Navbar.Header>
           <Navbar.Brand>
             <LinkContainer to="/">

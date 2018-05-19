@@ -1,0 +1,22 @@
+.jumbo {
+	background: url("https://c.pxhere.com/photos/13/87/abendstimmung_afterglow_bright_clouds_contrast_dawn_dramatic_dusk-993776.jpg!d") no-repeat;
+	color: white;
+	background-size:100%;
+	overflow:auto;
+
+}
+
+.float-right {
+	float: right;
+	width: 70%;
+}
+
+.profile-image {
+	float: none;
+	border: white 1px solid;
+	margin:0;
+}
+
+.jumbo-bottom {
+	padding-bottom: 2em;
+}

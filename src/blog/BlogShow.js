@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './Blog.css';
 import ReactImageFallback from "react-image-fallback";
-import { LinkContainer } from 'react-router-bootstrap';
 import Timestamp from 'react-timestamp';
 
 

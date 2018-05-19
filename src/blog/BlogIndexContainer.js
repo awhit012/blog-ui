@@ -15,13 +15,20 @@ class BlogIndexContainer extends Component {
 		let thisBlog = this;
 		axios.get('http://localhost:8080/api/v1/posts')
 		  .then(function (response) {
+		  	let orderedPosts = thisBlog.orderByDate(response.data.data);
 		    thisBlog.setState({
-		    	blogs: response.data.data
+		    	blogs: orderedPosts
 		    })
 		  })
 		  .catch(function (error) {
 		    console.log(error);
 		  });
+	}
+
+	orderByDate(arr, timestamp) {
+	  return arr.slice().sort(function (a, b) {
+	    return a[timestamp] < b[timestamp] ? -1 : 1;
+	  });
 	}
 
   render() {
