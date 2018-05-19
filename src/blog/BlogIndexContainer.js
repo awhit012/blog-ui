@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Blog from './Blog';
+import BlogPreview from './BlogPreview';
 import axios from 'axios';
 
 
-class BlogContainer extends Component {
+class BlogIndexContainer extends Component {
 	constructor(props) {
 	  super(props);
 	  this.state = {
@@ -15,7 +15,6 @@ class BlogContainer extends Component {
 		let thisBlog = this;
 		axios.get('http://localhost:8080/api/v1/posts')
 		  .then(function (response) {
-		    console.log("data", response.data.data);
 		    thisBlog.setState({
 		    	blogs: response.data.data
 		    })
@@ -30,9 +29,12 @@ class BlogContainer extends Component {
   	console.log("state", this.state)
   	if(this.state.blogs) {
   		blogs = this.state.blogs.map( (blog, index) => {
-  			return <Blog key={index} 
-			  				title={blog.title} 
-			  				content={blog.content}/>
+  			return <BlogPreview key={index} 
+  						id={blog._id}
+  						timeStamp = {blog.timestamp}
+  						img = {blog.featuredImage}
+		  				title={blog.title} 
+		  				content={blog.content}/>
   		})
   	}
     return (
@@ -41,4 +43,4 @@ class BlogContainer extends Component {
   }
 }
 
-export default BlogContainer;
+export default BlogIndexContainer;

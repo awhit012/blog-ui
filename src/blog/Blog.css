@@ -1,0 +1,20 @@
+img {
+	max-width: 20%;
+	margin-top: 2em;
+	float: left;
+}
+
+.blog-right {
+	float: right;
+	width: 70%;
+}
+
+
+.card {
+	width: 18rem;
+}
+
+.timestamp {
+	color: gray;
+	font-size: .8em;
+}

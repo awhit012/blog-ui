@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import NavBar from './layout/NavBar';
-import BlogContainer from './blog/BlogContainer';
+import BlogIndexContainer from './blog/BlogIndexContainer';
 import StoreContainer from './store/StoreContainer';
+import BlogShowContainer from './blog/BlogShowContainer';
 import About from './pages/About';
 import Help from './pages/Help';
 
@@ -19,7 +20,8 @@ class App extends Component {
         <div className="App">
           <NavBar />
             <div>
-              <Route exact path="/" component={BlogContainer} />
+              <Route exact path="/" component={BlogIndexContainer} />
+              <Route exact path="/posts/:id" component={BlogShowContainer}/>
               <Route path="/store" component={StoreContainer} />
               <Route path="/help" component={Help} />
               <Route path="/about" component={About} />
