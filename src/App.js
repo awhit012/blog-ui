@@ -6,7 +6,7 @@ import BlogShowContainer from './blog/BlogShowContainer';
 import StoreIndexContainer from './store/StoreIndexContainer';
 import StoreItemContainer from './store/StoreItemContainer';
 import About from './pages/About';
-import Help from './pages/Help';
+import HelpContainer from './help/HelpContainer';
 
 
 import {
@@ -25,7 +25,7 @@ class App extends Component {
               <Route exact path="/posts/:id" component={BlogShowContainer}/>
               <Route path="/store" component={StoreIndexContainer} />
               <Route exact path="/items/:id" component={StoreItemContainer}/>
-              <Route path="/help" component={Help} />
+              <Route path="/help" component={HelpContainer} />
               <Route path="/about" component={About} />
             </div>
         </div>
