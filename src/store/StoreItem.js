@@ -1,31 +1,30 @@
 import React, { Component } from 'react';
+import './Store.css';
 import ReactImageFallback from "react-image-fallback";
 import { LinkContainer } from 'react-router-bootstrap';
-
 
 import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
+import Items from './Items.json'
 
-import './Store.css';
 
-
-class StorePreview extends Component {
+class StoreItem extends Component {
   render() {
     return (
-      <Card className="card margin-2">
+    	<Card className="card margin-2">
         <ReactImageFallback src={this.props.img}
           className="media center"
-  				initialImage="/images/loading_icon.gif"
-  				fallbackImage="/images/profile2018.png"/>
+          initialImage="/images/loading_icon.gif"
+          fallbackImage="/images/profile2018.png"/>
         <CardContent className="card-content">
           <Typography gutterBottom variant="headline" component="h2">
             {this.props.name}
           </Typography>
           <Typography component="p">
-            {this.props.description.substring(0,100) + "..."}
+            {this.props.description}
           </Typography>
         </CardContent>
         <CardActions>
@@ -35,14 +34,17 @@ class StorePreview extends Component {
           
 
           <LinkContainer to={"/items/" + this.props.id}>
-	      			<Button variant="outlined" size="small" color="primary">
-            		Learn More
-         		  </Button>
-      		</LinkContainer>
+              <Button variant="outlined" size="small" color="primary">
+                Learn More
+              </Button>
+          </LinkContainer>
         </CardActions>
       </Card>
     );
   }
 }
 
-export default StorePreview;
+export default StoreItem;
+
+
+

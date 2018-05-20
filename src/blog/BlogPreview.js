@@ -14,8 +14,8 @@ class Blog extends Component {
   				fallbackImage="/images/profile2018.png"/>
 		    <div className="blog-right">
 		    	<LinkContainer to={"/posts/" + this.props.id}>
-	      		<h1><a>{this.props.title}</a></h1>
-          </LinkContainer>
+	      			<h1><a>{this.props.title}</a></h1>
+          		</LinkContainer>
 	    		<Timestamp 
 	    			time={this.props.timestamp} 
 	    			format='date' 
