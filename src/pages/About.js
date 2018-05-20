@@ -12,7 +12,7 @@ class About extends Component {
     	<Jumbotron className="jumbo">
 		  	<h2>Welcome to Fibro Warrior!</h2>
 			<ReactImageFallback className="profile-image"
-	            fallbackImage="/images/profile2018.png"/>
+	            fallbackImage="/images/profile2018.png"
 				src="/images/profile2018.png"
   				initialImage="/images/loading_icon.gif" />
 		</Jumbotron>
