@@ -1,45 +1,36 @@
 import React, { Component } from 'react';
 import './Store.css';
 import ReactImageFallback from "react-image-fallback";
-import { LinkContainer } from 'react-router-bootstrap';
-
-import Button from '@material-ui/core/Button';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import Typography from '@material-ui/core/Typography';
-import Items from './Items.json'
-
+import AmazonButton from '../ui-components/AmazonButton'
+import {Panel} from 'react-bootstrap';
 
 class StoreItem extends Component {
   render() {
     return (
-    	<Card className="card margin-2">
+      <div className="container">
         <ReactImageFallback src={this.props.img}
-          className="media center"
+          className="item-img"
           initialImage="/images/loading_icon.gif"
-          fallbackImage="/images/profile2018.png"/>
-        <CardContent className="card-content">
-          <Typography gutterBottom variant="headline" component="h2">
-            {this.props.name}
-          </Typography>
-          <Typography component="p">
-            {this.props.description}
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button variant="outlined" size="small" color="primary">
+          fallbackImage="https://upload.wikimedia.org/wikipedia/commons/a/af/Notfound.png"/>
+        <div className="store-right">
+          <h1>{this.props.name}</h1>
+          <p>{this.props.description}</p> 
+          <h3>My take</h3>
+          <p>{this.props.myTake}</p>
+        </div>
+        <div>
+          <AmazonButton url={this.props.url} variant="outlined" size="small" color="primary">
             Buy On Amazon
-          </Button>
-          
+          </AmazonButton>
+          <Panel bsStyle="info" className="panel">
+            <Panel.Heading>
+              <Panel.Title componentClass="h3">Support This Site</Panel.Title>
+            </Panel.Heading>
+            <Panel.Body>If you go to amazon by clicking the button above, and buy <em>anything</em>, we get a small commission!</Panel.Body>
+          </Panel>
+        </div>
 
-          <LinkContainer to={"/items/" + this.props.id}>
-              <Button variant="outlined" size="small" color="primary">
-                Learn More
-              </Button>
-          </LinkContainer>
-        </CardActions>
-      </Card>
+      </div>
     );
   }
 }
