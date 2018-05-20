@@ -18,15 +18,15 @@ class StorePreview extends Component {
     return (
       <Card className="card margin-2">
         <ReactImageFallback src={this.props.img}
-          className="media"
+          className="media center"
   				initialImage="/images/loading_icon.gif"
   				fallbackImage="/images/profile2018.png"/>
-        <CardContent>
+        <CardContent className="card-content">
           <Typography gutterBottom variant="headline" component="h2">
             {this.props.name}
           </Typography>
           <Typography component="p">
-            {this.props.description}
+            {this.props.description.substring(0,100) + "..."}
           </Typography>
         </CardContent>
         <CardActions>

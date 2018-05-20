@@ -1,14 +1,15 @@
 .card {
 	max-width: 345px;
 	display: inline-block !important;
+	text-align:center;
+	height: 300px;
 }	
 
 .media {
 	max-width: 90%;
-	margin: 1em;
 	text-align: center;
-	/*height: 0;*/
-	/*padding-top: 56.25%;*/
+	max-height: 100px;
+	display:inline-block;
 }
 
 .move-down {
@@ -22,4 +23,17 @@
 .store-header {
 	text-align: left;
 	margin: 2em;
+}
+
+.card-content {
+	display: block;
+	clear: both;
+	text-align: left;
+}
+
+.center {
+    position: relative;          /* where the next element will be automatically positioned */
+    display: inline-block;       /* causes element width to shrink to fit content */
+    left: 50%;                   /* moves left side of image/element to center of parent element */
+    transform: translate(-50%);  /* centers image/element on "left: 50%" position */
 }
