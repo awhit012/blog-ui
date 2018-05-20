@@ -19,7 +19,7 @@ class About extends Component {
 			<p className="container">
 		    	Hi! I'm Alex White. I got diagnosed with Fibromyalgia a few years ago, but have been battling it since I was a child. 
 
-		    	This site is dedicated to sharing information and resources that has helped me personally with anyone else who is suffering from Fibromyalgia, Chronic Fatigue, Chronic Pain, LBS, IBS, or even people like me who have very limiting dietary restrictions. 
+		    	It's been quite the journy and I've learned a ton. Although I still have daily pain and fatigue, through research, and working with doctors and nutritionists, I've been able improve my quality of life drastically. These conditions are still poorly understood, and it can be hard to find quality informaion. This site is dedicated to sharing information and resources that has helped me personally with anyone else who is suffering from Fibromyalgia, Chronic Fatigue, Chronic Pain, LBS, IBS, or even people like me who have very limiting dietary restrictions. If I can help just a couple of people improve their quality of life, that's a huge win!
 		  	</p>
 
 			<h2>How it works</h2>
@@ -29,7 +29,7 @@ class About extends Component {
 			</p>
 
 			<p className="container jumbo-bottom">
-				Because I live with Fibromyalgia every day, it is important to me that this site not just provide free, quality information, but also give back monetarily. That's why I will donate 5% of our commisions to <a href="http://www.afsafund.org/">The American Fibromyalgia Syndrome Association</a>.
+				Because I live with Fibromyalgia every day, it is important to me that this site not just provide free, quality information, but also give back monetarily. That's why I donate 5% of our commisions to <a href="http://www.afsafund.org/">The American Fibromyalgia Syndrome Association</a>.
 			</p>
     </div>	
     
