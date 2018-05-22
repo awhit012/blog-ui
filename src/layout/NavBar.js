@@ -10,7 +10,7 @@ class NavBar extends Component {
         <Navbar.Header>
           <Navbar.Brand>
             <LinkContainer to="/">
-                <a>Fibro Warrior</a>
+                <a>Fibro Warrior | Alpha -- Prerelease</a>
             </LinkContainer>
           </Navbar.Brand>
           <Navbar.Toggle />

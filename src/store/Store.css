@@ -10,6 +10,7 @@
 	text-align: center;
 	max-height: 100px;
 	display:inline-block;
+	margin-top: 1em !important;
 }
 
 .move-down {
@@ -55,8 +56,8 @@
 	width: 20% !important;
 	margin-top: 2em;
 	font-size: 10px;
-	height: auto;
-	max-height: 160px;
+	/*height: auto;*/
+	max-height: 300px;
 	clear: left;
 
 }

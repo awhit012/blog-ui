@@ -13,7 +13,7 @@ class BlogIndexContainer extends Component {
 
 	componentDidMount() {
 		let thisBlog = this;
-		axios.get('http://localhost:8080/api/v1/posts')
+		axios.get('https://fibrowarriorapi.herokuapp.com/api/v1/posts')
 		  .then(function (response) {
 		  	let orderedPosts = thisBlog.orderByDate(response.data.data);
 		    thisBlog.setState({
@@ -33,7 +33,6 @@ class BlogIndexContainer extends Component {
 
   render() {
   	let blogs;  	
-  	console.log("state", this.state)
   	if(this.state.blogs) {
   		blogs = this.state.blogs.map( (blog, index) => {
   			return <BlogPreview key={index} 

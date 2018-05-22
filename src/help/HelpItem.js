@@ -7,12 +7,15 @@ class HelpItem extends Component {
     return (
 
       <div className="container">
-        <ReactImageFallback src={this.props.img}
+        <ReactImageFallback className="help-image"
+          src={this.props.img}
           initialImage="/images/loading_icon.gif"
           fallbackImage="/images/profile2018.png"/>
         <div className="help-right">
           <h1><a>{this.props.name}</a></h1>
-          <p>{this.props.description}</p>  
+          <p>{this.props.description}</p> 
+          {this.props.id !== 1984 ? <h4>My Take</h4> : ""} 
+          <p>{this.props.myTake}</p>
         </div>
       </div>
     );

@@ -1,4 +1,4 @@
-img {
+.help-img {
 	max-width: 20%;
 	margin-top: 2em;
 	float: left;
@@ -17,4 +17,8 @@ img {
 .timestamp {
 	color: gray;
 	font-size: .8em;
+}
+
+.store-container {
+	margin-bottom: 2em;
 }

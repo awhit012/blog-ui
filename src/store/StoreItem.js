@@ -26,7 +26,7 @@ class StoreItem extends Component {
             <Panel.Heading>
               <Panel.Title componentClass="h3">Support This Site</Panel.Title>
             </Panel.Heading>
-            <Panel.Body>If you go to amazon by clicking the button above, and buy <em>anything</em>, we get a small commission!</Panel.Body>
+            <Panel.Body>If you go to amazon by clicking the button above, and buy <em>anything</em>, we get a small commission! In turn, we donate 5% of our commissions to <a href="http://www.afsafund.org/">The American Fibromyalgia Syndrome Association</a></Panel.Body>
           </Panel>
         </div>
 

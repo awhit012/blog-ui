@@ -13,10 +13,11 @@ class HelpContainer extends Component {
             name = {item.name}
             description={item.description} 
             img = {item.img}
+            myTake = {item.myTake}
             categories = {item.categories}/>
     })
     return (
-      <div>
+      <div className="store-container">
         <h3 className="store-header">The following are ways to get professional help that I have personally benefitted from, as well as a way to hire me as a Pain Management Life Coach.</h3>
         <div className="container">{helpItems}</div>
       </div>  

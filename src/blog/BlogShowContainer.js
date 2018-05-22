@@ -13,7 +13,7 @@ class BlogShowContainer extends Component {
 
 	componentDidMount() {
 		let thisBlog = this;
-		axios.get('http://localhost:8080/api/v1' +this.props.location.pathname )
+		axios.get('https://fibrowarriorapi.herokuapp.com/api/v1' +this.props.location.pathname )
 		  .then(function (response) {
 		  	console.log(response)
 		    thisBlog.setState({
