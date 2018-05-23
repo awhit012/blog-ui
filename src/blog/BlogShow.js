@@ -6,6 +6,15 @@ import Timestamp from 'react-timestamp';
 
 class BlogShow extends Component {
   render() {
+    debugger
+
+    let paragraphs;
+    if(this.props.content) {
+      let content = this.props.content.split("\r")
+      paragraphs = content.map((paragraph) => {
+        return <p>{paragraph}</p>
+      });
+    }
     return (
     	<div className="container">
   			<ReactImageFallback src={this.props.img}
@@ -17,7 +26,7 @@ class BlogShow extends Component {
 	    			time={this.props.timestamp} 
 	    			format='date' 
 	    			className="timestamp"/>
-	      	<p>{this.props.content}</p>	
+	      	<div>{paragraphs}</div>	
 		    </div>
 	    </div>
     );
