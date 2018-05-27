@@ -44,7 +44,7 @@ class BlogIndexContainer extends Component {
   		})
   	}
     return (
-    	<div>{blogs}</div>
+    	<div id="blog-container">{blogs}</div>
     );
   }
 }

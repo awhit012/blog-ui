@@ -18,3 +18,7 @@ img {
 	color: gray;
 	font-size: .8em;
 }
+
+#blog-container {
+	margin-top: 2em;
+}
