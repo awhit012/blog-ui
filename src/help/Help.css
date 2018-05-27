@@ -22,3 +22,9 @@
 .store-container {
 	margin-bottom: 2em;
 }
+
+.store-header {
+	border: 1px black solid;
+	padding: 1em;
+	border-radius: 4px;
+}
