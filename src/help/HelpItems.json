@@ -10,10 +10,10 @@
 	{"_id": 2222, 
 	  "name": "Root Causes Clinic", 
 	  "description": "Root Causes Clinic was created to offer a wider range of Functional Medicine Practitioners to people like you. Our current conventional healthcare system often falls short of finding the root causes of symptoms and silent inflammation, leaving patients with a prescription and not much else. Rather than simply masking symptoms, our practitioners use science based labs and in depth patient health discovery to do a deep dive into what may be triggering a cascade of inflammation in the patient. While many patients may be used to a quick 15 minute meeting with their doctor, our practitioners spend an entire 90 minutes during your initial consultation in order to cover all potential factors.",
-	  "img": "http://i3.wp.com/rootcausesclinic.com/wp-content/uploads/2017/12/rootcausesclinicwebsitelogo.png",
+	  "img": "https://i3.wp.com/rootcausesclinic.com/wp-content/uploads/2017/12/rootcausesclinicwebsitelogo.png",
 	  "categories": ["webcam", "specialist"],
 	  "myTake": "I met with Jade from Root Causes, and she helped understand how the absorbtion of vitamins (or lack thereof) can effect Fibromyalgia. She put me on a regimin of supplements, which have improved my health, especially my gut health. I continue to work with Jade. ",
-	  "url" : "http://rootcausesclinic.com/"
+	  "url" : "https://rootcausesclinic.com/"
 	},
 	{"_id": 4444, 
 	  "name": "Get a Medical Cannabis Card", 
@@ -21,7 +21,7 @@
 	  "img": "https://static.wixstatic.com/media/1b771c_24900d1d7ddd4042a527b57745fac913~mv2.png/v1/fill/w_170,h_170,al_c,usm_0.66_1.00_0.01/1b771c_24900d1d7ddd4042a527b57745fac913~mv2.png",
 	  "categories": ["supplement", "gut health"],
 	  "myTake": "Medical cannabis has helped me tremendously over the years with pain, insomnia, and even brain fog! This company is located in CA, please make sure your state has legal medical cannabis, and will accept a CA issued recommendation.",
-	  "url" : "http://www.nuggmd.com/"
+	  "url" : "https://www.nuggmd.com/"
 	},
 	{"_id": 5555, 
 	  "name": "Holistic Pain Treatment with Dr. Lei", 
@@ -29,7 +29,7 @@
 	  "img": "http://www.reclaimhealth.org/images/navLogo.gif",
 	  "categories": ["webcam"],
 	  "myTake": "Dr. Lei helped me make my first big leap to better health, by working with me in relation to gut health as well as mental health. I credit Dr. Lei with helping me to truly take responsibility for my own health, and to see the connection between spiritual/ emotional health and physical health.",
-	  "url" : "http://www.reclaimhealth.org/"
+	  "url" : "https://www.reclaimhealth.org/"
 	},
 	{"_id": 1984, 
 	  "name": "Life Coaching with Alex White", 
