@@ -45,24 +45,16 @@
 }
 
 .item-img {
-	max-width: 20%;
-	margin: 2em;
+	width: 20%;
 	float: left;
-	max-height: 100px;
-	padding-right: 1em;
+    margin-top: 2em;
 }
 
 .panel {
 	width: 20% !important;
 	margin-top: 2em;
 	font-size: 10px;
-	/*height: auto;*/
 	max-height: 300px;
 	clear: left;
-
 }
 
-.button-containter {
-	clear: both;
-	float: left;
-}
