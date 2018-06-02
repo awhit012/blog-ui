@@ -1,23 +1,38 @@
 import React, { Component } from 'react';
 import BlogShow from './BlogShow';
 import axios from 'axios';
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import faHeart from '@fortawesome/fontawesome-free-regular/faHeart';
+import faHeartSolid from '@fortawesome/fontawesome-free-solid/faHeart';
 
 
 class BlogShowContainer extends Component {
 	constructor(props) {
 	  super(props);
 	  this.state = {
-	    blog: {}
+	    blog: {},
+	    liked: false,
+	    likes: 0
 	  };
+	  this.toggleLike = this.toggleLike.bind(this);
+	  this.baseUrl = 'https://fibrowarriorapi.herokuapp.com/api/v1';
 	}
 
 	componentDidMount() {
-		let thisBlog = this;
-		axios.get('https://fibrowarriorapi.herokuapp.com/api/v1' +this.props.location.pathname )
+		this.getBlog();
+	}
+
+	getBlog() {
+		let blogShowContainer = this;
+		axios.get(this.baseUrl + this.props.location.pathname )
 		  .then(function (response) {
-		  	console.log(response)
-		    thisBlog.setState({
+		    blogShowContainer.setState({
 		    	blog: response.data.data
+		    }, () => {
+		    	blogShowContainer.getLikeFromLocalStorage();
+		    	blogShowContainer.setState({
+		    		likes: blogShowContainer.state.blog.likes
+		    	})
 		    })
 		  })
 		  .catch(function (error) {
@@ -25,13 +40,73 @@ class BlogShowContainer extends Component {
 		  });
 	}
 
+	getLikeFromLocalStorage() {
+	  let liked = localStorage.getItem(this.state.blog._id); 
+	  if (liked) {
+	  	this.setState({liked: true});
+	  }
+	}
+
+	toggleLike() {
+		this.setState({liked: !this.state.liked}, 
+			() => {
+				this.putLike(this.state.liked);
+				this.updateLocalStorage(this.state.liked);
+		});
+		this.trackLikes(this.state.liked);
+	}
+
+	trackLikes(liked) {
+		let change;
+		if(liked) {
+			change = -1;
+		} else {
+			change = 1;
+		}
+		this.setState({likes: this.state.likes + change});
+	}
+
+	putLike(liked) {
+		let likePath;
+		liked ? likePath = "/like" : likePath = "/unlike";
+		let url = this.baseUrl + this.props.location.pathname + likePath
+		axios.put(url)
+			.then(function (response) {
+		  	console.log(response);
+			})
+			.catch( function (error) {
+				console.log(error);
+			})
+	}
+
+	updateLocalStorage(liked) {
+		if(liked) {
+			localStorage.setItem(this.state.blog._id, liked)
+		} else {
+			localStorage.removeItem(this.state.blog._id)
+		}
+	}
+
   render() {
+  	let heart;
+  	this.state.liked ? heart = faHeartSolid : heart = faHeart;
+
     return (
-    	<BlogShow
-			timeStamp = {this.state.blog.timestamp}
-			img = {this.state.blog.featuredImage}
-			title={this.state.blog.title} 
-			content={this.state.blog.content}/>
+    	<div>
+    		<BlogShow
+					timeStamp  = {this.state.blog.timestamp}
+					img        = {this.state.blog.featuredImage}
+					title      = {this.state.blog.title} 
+					content    = {this.state.blog.content}
+					toggleLike = {this.toggleLike}
+					liked      = {this.state.liked} />
+				<span className="like-span">
+					<FontAwesomeIcon icon={heart} onClick={this.toggleLike}/>
+					&nbsp;
+					{this.state.likes}
+				</span>
+    	</div>
+    	
     );
   }
 }
