@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import BlogPreview from './BlogPreview';
 import axios from 'axios';
-import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import CategoriesContainer from '../ui-components/CategoriesContainer';
 
+const noBlog = {
+	title: "An Error has occured.",
+	content: "Apologies! Please check back with us soon, we are working hard on a solution."
+}
 
 class BlogIndexContainer extends Component {
 	constructor(props) {
@@ -51,8 +54,12 @@ class BlogIndexContainer extends Component {
   render() {
   	let blogs;  	
   	if(this.state.blogs) {
+  		if(this.state.blogs.length === 0) {
+  			this.state.blogs.push(noBlog);
+  		}
+
   		blogs = this.state.blogs.map( (blog, index) => {
-  			return <div>
+  			return <div key={index}>
   						<BlogPreview key={index} 
 	  						id={blog._id}
 	  						timeStamp = {blog.timestamp}
@@ -61,7 +68,7 @@ class BlogIndexContainer extends Component {
 			  				content={blog.content}
 			  				likes={blog.likes}/>
 			  			<CategoriesContainer
-			  				key={index}
+			  				key={index + 1000}
 				  			className= "categories-container-index"
 								categories = {blog.categories}/>
 					</div>
