@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import './UI.css';
 import Chip from '@material-ui/core/Chip';
 import Paper from '@material-ui/core/Paper';
 

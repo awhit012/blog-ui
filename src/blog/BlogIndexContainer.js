@@ -3,6 +3,8 @@ import BlogPreview from './BlogPreview';
 import axios from 'axios';
 import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
+import CategoriesContainer from '../ui-components/CategoriesContainer';
+
 
 class BlogIndexContainer extends Component {
 	constructor(props) {
@@ -50,13 +52,19 @@ class BlogIndexContainer extends Component {
   	let blogs;  	
   	if(this.state.blogs) {
   		blogs = this.state.blogs.map( (blog, index) => {
-  			return <BlogPreview key={index} 
-  						id={blog._id}
-  						timeStamp = {blog.timestamp}
-  						img = {blog.featuredImage}
-		  				title={blog.title} 
-		  				content={blog.content}
-		  				likes={blog.likes}/>
+  			return <div>
+  						<BlogPreview key={index} 
+	  						id={blog._id}
+	  						timeStamp = {blog.timestamp}
+	  						img = {blog.featuredImage}
+			  				title={blog.title} 
+			  				content={blog.content}
+			  				likes={blog.likes}/>
+			  			<CategoriesContainer
+			  				key={index}
+				  			className= "categories-container-index"
+								categories = {blog.categories}/>
+					</div>
   		})
   	}
     return (

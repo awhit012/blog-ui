@@ -1,12 +1,13 @@
 img {
 	max-width: 20%;
-	margin-top: 2em;
+	margin-top: 3em;
 	float: left;
 }
 
 .blog-right {
 	float: right;
 	width: 70%;
+	margin-top: 1em;
 }
 
 
@@ -20,7 +21,7 @@ img {
 }
 
 #blog-container {
-	margin-top: 2em;
+	margin: 2em 0 2em 0;
 }
 
 .like-span {
