@@ -26,3 +26,10 @@ img {
 .like-span {
 	margin-left: -33%;
 }
+
+.sort-buttons {
+	position: absolute;
+	right: 4em;
+	top: 4em;
+	margin-bottom: 2em;
+}

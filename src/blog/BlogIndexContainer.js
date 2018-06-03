@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import BlogPreview from './BlogPreview';
 import axios from 'axios';
-
+import { withStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
 
 class BlogIndexContainer extends Component {
 	constructor(props) {
@@ -9,27 +10,41 @@ class BlogIndexContainer extends Component {
 	  this.state = {
 	    blogs: []
 	  };
+	  this.orderByLikes = this.orderByLikes.bind(this);
+	  this.orderByDate = this.orderByDate.bind(this);
 	}
 
 	componentDidMount() {
-		let thisBlog = this;
+		let blogIndexContainer = this;
 		axios.get('https://fibrowarriorapi.herokuapp.com/api/v1/posts')
 		  .then(function (response) {
-		  	let orderedPosts = thisBlog.orderByDate(response.data.data);
-		    thisBlog.setState({
-		    	blogs: orderedPosts
-		    })
+		    blogIndexContainer.setState({
+		    	blogs: response.data.data
+		    }, () => {
+		  		blogIndexContainer.orderByDate();
+		    });
 		  })
 		  .catch(function (error) {
 		    console.log(error);
 		  });
 	}
 
-	orderByDate(arr, timestamp) {
-	  return arr.slice().sort(function (a, b) {
-	    return a[timestamp] < b[timestamp] ? -1 : 1;
+	orderByDate() {
+		let blogIndexContainer = this;
+	  let orderedPosts = blogIndexContainer.state.blogs.slice().sort(function (a, b) {
+	    return a['timestamp'] > b['timestamp'] ? -1 : 1;
 	  });
+	  this.setState({blogs: orderedPosts})
 	}
+
+	orderByLikes() {
+		let blogIndexContainer = this;
+	  let orderedPosts = blogIndexContainer.state.blogs.slice().sort(function (a, b) {
+	    return a['likes'] > b['likes'] ? -1 : 1;
+	  });
+	  this.setState({blogs: orderedPosts})
+	}
+
 
   render() {
   	let blogs;  	
@@ -45,7 +60,13 @@ class BlogIndexContainer extends Component {
   		})
   	}
     return (
-    	<div id="blog-container">{blogs}</div>
+    	<div>
+    		<span className="sort-buttons">
+	    		<Button onClick={this.orderByDate}>By Date</Button>
+	      		<Button onClick={this.orderByLikes}>By Likes</Button>
+      		</span>	
+    		<div id="blog-container">{blogs}</div>
+    	</div>
     );
   }
 }
