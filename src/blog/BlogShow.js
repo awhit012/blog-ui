@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import './Blog.css';
 import ReactImageFallback from "react-image-fallback";
 import Timestamp from 'react-timestamp';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import faHeart from '@fortawesome/fontawesome-free-regular/faHeart';
-import faHeartSolid from '@fortawesome/fontawesome-free-solid/faHeart';
 
 
 class BlogShow extends Component {

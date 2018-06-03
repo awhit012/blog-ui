@@ -40,7 +40,8 @@ class BlogIndexContainer extends Component {
   						timeStamp = {blog.timestamp}
   						img = {blog.featuredImage}
 		  				title={blog.title} 
-		  				content={blog.content}/>
+		  				content={blog.content}
+		  				likes={blog.likes}/>
   		})
   	}
     return (
