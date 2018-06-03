@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import BlogShow from './BlogShow';
+import CategoriesContainer from '../ui-components/CategoriesContainer';
 import axios from 'axios';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faHeart from '@fortawesome/fontawesome-free-regular/faHeart';
@@ -12,7 +13,7 @@ class BlogShowContainer extends Component {
 	  this.state = {
 	    blog: {},
 	    liked: false,
-	    likes: 0
+	    likes: 0,
 	  };
 	  this.toggleLike = this.toggleLike.bind(this);
 	  this.baseUrl = 'https://fibrowarriorapi.herokuapp.com/api/v1';
@@ -26,6 +27,7 @@ class BlogShowContainer extends Component {
 		let blogShowContainer = this;
 		axios.get(this.baseUrl + this.props.location.pathname )
 		  .then(function (response) {
+		  	console.log("resp", response.data.data)
 		    blogShowContainer.setState({
 		    	blog: response.data.data
 		    }, () => {
@@ -90,7 +92,7 @@ class BlogShowContainer extends Component {
   render() {
   	let heart;
   	this.state.liked ? heart = faHeartSolid : heart = faHeart;
-
+  	console.log(this.state)
     return (
     	<div>
     		<BlogShow
@@ -100,6 +102,8 @@ class BlogShowContainer extends Component {
 					content    = {this.state.blog.content}
 					toggleLike = {this.toggleLike}
 					liked      = {this.state.liked} />
+				<CategoriesContainer 
+					categories = {this.state.blog.categories}/>
 				<span className="like-span">
 					<FontAwesomeIcon icon={heart} onClick={this.toggleLike}/>
 					&nbsp;

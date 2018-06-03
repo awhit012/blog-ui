@@ -10,3 +10,13 @@
 	width: 100%;
 	font-size: .8em;
 }
+
+.categories-container {
+	position: absolute;
+	right: 4em;
+	margin-bottom: 2em;
+}
+
+.category {
+	margin-left: 1em;
+}
