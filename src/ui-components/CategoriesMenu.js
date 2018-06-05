@@ -8,27 +8,35 @@ import './UI.css';
 class CategoriesMenu extends React.Component {
   state = {
     anchorEl: null,
+    buttonText: "Filter by Category"
   };
 
   handleClick = event => {
     this.setState({ anchorEl: event.currentTarget });
   };
 
-  handleClose = () => {
+  handleCategoryClick = (category) => {
+    if(category === "All") {
+      this.setState({buttonText: "Filter by Category"});
+    } else {
+      this.setState({buttonText: category});
+    }
+
+    this.props.filterByCategory(category)
     this.setState({ anchorEl: null });
   };
 
   render() {
     const { anchorEl } = this.state;
     let categories = this.props.categories;
-    
+
     if(categories[0] !== "All") {
       categories.unshift("All");
     }
 
     let menuItems = categories.map((category, index) => {
       return <MenuItem 
-        onClick={ () => {this.props.sortByCategory(category)}}
+        onClick={ () => {this.handleCategoryClick(category)}}
         key={index}>
           {category}
         </MenuItem>
@@ -40,7 +48,7 @@ class CategoriesMenu extends React.Component {
           aria-haspopup="true"
           onClick={this.handleClick}
         >
-          Sort By Category
+          {this.state.buttonText} &#32; &#9660;
         </Button>
         <Menu
           id="simple-menu"

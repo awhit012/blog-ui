@@ -21,7 +21,7 @@ class BlogIndexContainer extends Component {
 	  };
 	  this.orderByLikes   = this.orderByLikes.bind(this);
 	  this.orderByDate    = this.orderByDate.bind(this);
-	  this.sortByCategory = this.sortByCategory.bind(this);
+	  this.filterByCategory = this.filterByCategory.bind(this);
 	}
 
 	componentDidMount() {
@@ -60,7 +60,7 @@ class BlogIndexContainer extends Component {
 	  this.setState({blogs: orderedPosts})
 	}
 
-	sortByCategory(category) {
+	filterByCategory(category) {
 		if (category === "All") {
 			this.setState({blogs: this.state.allBlogs})
 			return;
@@ -103,7 +103,7 @@ class BlogIndexContainer extends Component {
       		<Button onClick={this.orderByLikes}>By Likes</Button>
       		<CategoriesMenu className="categories-menu"
       			categories={this.state.categories}
-      			sortByCategory={this.sortByCategory}/>
+      			filterByCategory={this.filterByCategory}/>
     		</span>	
     		<div id="blog-container">{blogs}</div>
     	</div>
