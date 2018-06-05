@@ -27,7 +27,6 @@ class BlogShowContainer extends Component {
 		let blogShowContainer = this;
 		axios.get(this.baseUrl + this.props.location.pathname )
 		  .then(function (response) {
-		  	console.log("resp", response.data.data)
 		    blogShowContainer.setState({
 		    	blog: response.data.data
 		    }, () => {
