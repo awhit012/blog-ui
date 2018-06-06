@@ -22,7 +22,7 @@ class CategoriesMenu extends React.Component {
       this.setState({buttonText: category});
     }
 
-    this.props.filterByCategory(category)
+    this.props.handleFilterClick(category)
     this.setState({ anchorEl: null });
   };
 

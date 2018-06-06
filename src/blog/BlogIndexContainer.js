@@ -4,6 +4,7 @@ import axios from 'axios';
 import Button from '@material-ui/core/Button';
 import CategoriesContainer from '../ui-components/CategoriesContainer';
 import CategoriesMenu from '../ui-components/CategoriesMenu';
+import {getCategories, filterByCategory} from '../Helper.js'
 import './Blog.css';
 
 const noBlog = {
@@ -21,19 +22,20 @@ class BlogIndexContainer extends Component {
 	  };
 	  this.orderByLikes   = this.orderByLikes.bind(this);
 	  this.orderByDate    = this.orderByDate.bind(this);
-	  this.filterByCategory = this.filterByCategory.bind(this);
+	  this.handleFilterClick = this.handleFilterClick.bind(this);
 	}
 
 	componentDidMount() {
 		let blogIndexContainer = this;
 		axios.get('https://fibrowarriorapi.herokuapp.com/api/v1/posts')
 		  .then(function (response) {
+		  	let blogs = response.data.data
 		    blogIndexContainer.setState({
-		    	allBlogs: response.data.data,
-		    	blogs: response.data.data
+		    	allBlogs: blogs,
+		    	blogs: blogs, 
+		    	categories: getCategories(blogs)
 		    }, () => {
 		  		blogIndexContainer.orderByDate();
-  				blogIndexContainer.getCategories();
 		    });
 		  })
 		  .catch(function (error) {
@@ -60,22 +62,9 @@ class BlogIndexContainer extends Component {
 	  this.setState({blogs: orderedPosts})
 	}
 
-	filterByCategory(category) {
-		if (category === "All") {
-			this.setState({blogs: this.state.allBlogs})
-			return;
-		}
-		let blogs = this.state.allBlogs.filter( blog => blog.categories.includes(category))
-		this.setState({blogs: blogs});
-	}
-
-	getCategories() {
-		let allCategories = this.state.blogs.map((blog) => {return blog.categories});
-		let flattenedArray = [].concat.apply([], allCategories);
-		let categories = flattenedArray.reduce(function(a,b){if(a.indexOf(b)<0)a.push(b);return a;},[]);
-		this.setState({categories: categories});
-	}
-
+	handleFilterClick(category) {
+    this.setState({blogs: filterByCategory(category, this.state.allBlogs)});
+  }
 
   render() {
   	let blogs; 
@@ -100,10 +89,10 @@ class BlogIndexContainer extends Component {
     	<div>
     		<span className="sort-buttons">
 	    		<Button onClick={this.orderByDate}>By Date</Button>
-      		<Button onClick={this.orderByLikes}>By Likes</Button>
-      		<CategoriesMenu className="categories-menu"
-      			categories={this.state.categories}
-      			filterByCategory={this.filterByCategory}/>
+      			<Button onClick={this.orderByLikes}>By Likes</Button>
+      			<CategoriesMenu className="categories-menu"
+      				categories={this.state.categories}
+      				handleFilterClick={this.handleFilterClick}/>
     		</span>	
     		<div id="blog-container">{blogs}</div>
     	</div>
