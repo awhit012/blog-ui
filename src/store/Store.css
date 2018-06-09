@@ -1,4 +1,5 @@
 .card {
+	max-width: 345px;
 	display: inline-block !important;
 	text-align:center;
 	height: 300px;
@@ -7,7 +8,7 @@
 .media {
 	max-width: 90%;
 	text-align: center;
-	max-height: 100px;
+	max-height: 80px;
 	display:inline-block;
 	margin-top: 1em !important;
 }

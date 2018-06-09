@@ -90,9 +90,16 @@ class BlogIndexContainer extends Component {
     		<span className="sort-buttons">
 	    		<Button onClick={this.orderByDate}>By Date</Button>
       			<Button onClick={this.orderByLikes}>By Likes</Button>
+
+
+
       			<CategoriesMenu className="categories-menu"
       				categories={this.state.categories}
       				handleFilterClick={this.handleFilterClick}/>
+
+
+
+      				
     		</span>	
     		<div id="blog-container">{blogs}</div>
     	</div>

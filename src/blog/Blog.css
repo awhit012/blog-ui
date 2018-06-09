@@ -36,3 +36,8 @@ img {
 	margin-bottom: 2em;
 	display: inline;
 }
+
+#text-editor {
+	outline: 1px solid black;
+	color: red;
+}
