@@ -22,7 +22,7 @@ class BlogShow extends Component {
 	    			time={this.props.timestamp} 
 	    			format='date' 
 	    			className="timestamp"/>
-	      	<div>{ReactHtmlParser(this.props.content)}</div>	
+	      	<div className="blog-show">{ReactHtmlParser(this.props.content)}</div>	
 		    </div>
 	    </div>
     );

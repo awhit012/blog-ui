@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { EditorState, RichUtils } from 'draft-js';
 import {stateToHTML} from 'draft-js-export-html';
-
+import { Redirect } from 'react-router'
 import './Blog.css';
 import 'draft-js-emoji-plugin/lib/plugin.css';
 import 'draft-js-static-toolbar-plugin/lib/plugin.css';
@@ -42,7 +42,7 @@ class BlogFormContainer extends Component {
   }
 
   handleTitleChange(event) {
-    this.setState({title: event.target.value}, console.log(this.state.title));
+    this.setState({title: event.target.value});
   }
 
   handleCategoryChange(event) {
@@ -63,10 +63,10 @@ class BlogFormContainer extends Component {
     	categories: this.state.categories.split(","),
     	featuredImage: this.state.imgUrl
     }
-    console.log(data)
     axios.post(this.postUrl, data )
 		  .then(function (response) {
 		  	console.log(response);
+		  	return <Redirect to='/' />
 		  })
 		  .catch(function (error) {
 		    console.log(error);

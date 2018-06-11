@@ -10,6 +10,10 @@ import ReactHtmlParser from 'react-html-parser';
 
 class Blog extends Component {
   render() {
+  	let preview;
+  	if(this.props.content) {
+  		preview = this.props.content.split("</p>")[0].substring(0,400) + "...";
+  	}
     return (
     	<div className="container">
   			<ReactImageFallback src={this.props.img}
@@ -23,7 +27,7 @@ class Blog extends Component {
 	    			time={this.props.timestamp} 
 	    			format='date' 
 	    			className="timestamp"/>
-	      		<div>{ReactHtmlParser(this.props.content.substring(0,400) + "...")}</div>
+	      		<div>{ReactHtmlParser(preview)}</div>
 	      		<FontAwesomeIcon icon={faHeartSolid} onClick={this.toggleLike}/>
 				&nbsp;
 				{this.props.likes}	
