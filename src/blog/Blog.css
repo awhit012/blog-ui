@@ -29,15 +29,21 @@ img {
 
 }
 
-.sort-buttons {
-	position: absolute;
-	right: 2em;
-	top: 4em;
-	margin-bottom: 2em;
-	display: inline;
+.text-editor {
+	box-sizing: border-box;
+	outline: 1px solid black;
+	min-height: 12em;
+	cursor: text;
+	padding: 16px;
+	margin: 2em;
+	box-shadow: inset 0px 1px 8px -3px #ABABAB;
+	background: #fefefe;
+	border: 1px solid #ddd;
+	position: relative;
+	text-align: left;
 }
 
-#text-editor {
-	outline: 1px solid black;
-	color: red;
+.toolbar {
+	position: absolute;
+  bottom: 0;		
 }
