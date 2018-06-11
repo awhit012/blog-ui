@@ -3,7 +3,7 @@ import './App.css';
 import NavBar from './layout/NavBar';
 import BlogIndexContainer from './blog/BlogIndexContainer';
 import BlogShowContainer from './blog/BlogShowContainer';
-import BlogForm from './blog/BlogForm';
+import BlogFormContainer from './blog/BlogFormContainer';
 import StoreIndexContainer from './store/StoreIndexContainer';
 import StoreItemContainer from './store/StoreItemContainer';
 import About from './pages/About';
@@ -28,7 +28,7 @@ class App extends Component {
               <Route exact path="/items/:id" component={StoreItemContainer}/>
               <Route path="/help" component={HelpContainer} />
               <Route path="/about" component={About} />
-              <Route path="/postblogalabastermonkey33" component={BlogForm} />
+              <Route path="/postblogalabastermonkey33" component={BlogFormContainer} />
             </div>
         </div>
       </Router>

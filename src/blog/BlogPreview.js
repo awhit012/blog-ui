@@ -5,7 +5,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 import Timestamp from 'react-timestamp';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faHeartSolid from '@fortawesome/fontawesome-free-solid/faHeart';
-import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
+import ReactHtmlParser from 'react-html-parser';
 
 
 class Blog extends Component {

@@ -2,19 +2,11 @@ import React, { Component } from 'react';
 import './Blog.css';
 import ReactImageFallback from "react-image-fallback";
 import Timestamp from 'react-timestamp';
-import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
+import ReactHtmlParser from 'react-html-parser';
 
 
 class BlogShow extends Component {
   render() {
-
-    // let paragraphs;
-    // if(this.props.content) {
-    //   let content = this.props.content.split("\r")
-    //   paragraphs = content.map((paragraph, index) => {
-    //     return <p key={index}>{paragraph}</p>
-    //   });
-    // }
     if(this.props.content) {
       console.log(this.props.content)
     }
