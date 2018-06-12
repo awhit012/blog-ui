@@ -3,7 +3,6 @@ import { EditorState, RichUtils } from 'draft-js';
 import {stateToHTML} from 'draft-js-export-html';
 import { Redirect } from 'react-router'
 import './Blog.css';
-import 'draft-js-emoji-plugin/lib/plugin.css';
 import 'draft-js-static-toolbar-plugin/lib/plugin.css';
 import BlogForm from './BlogForm';
 import axios from 'axios';
@@ -17,7 +16,7 @@ class BlogFormContainer extends Component {
       categories: [],
       imgUrl: ''
     };
-	  this.postUrl = 'https://agitated-sammet-4499d9.netlify.com/api/v1/posts';
+	  this.postUrl = 'https://fibrowarriorapi.herokuapp.com/api/v1/posts';
 
     this.onChange = this.onChange.bind(this);
     this.handleKeyCommand = this.onChange.bind(this);

@@ -27,7 +27,7 @@ class BlogIndexContainer extends Component {
 
 	componentDidMount() {
 		let blogIndexContainer = this;
-		axios.get('https://agitated-sammet-4499d9.netlify.com/api/v1/posts')
+		axios.get('https://fibrowarriorapi.herokuapp.com/api/v1/posts')
 		  .then(function (response) {
 		  	let blogs = response.data.data
 		    blogIndexContainer.setState({

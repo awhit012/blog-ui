@@ -16,7 +16,7 @@ class BlogShowContainer extends Component {
 		likes: 0,
 	  };
 	  this.toggleLike = this.toggleLike.bind(this);
-	  this.baseUrl = 'https://agitated-sammet-4499d9.netlify.com//api/v1';
+	  this.baseUrl = 'https://fibrowarriorapi.herokuapp.com/posts/api/v1';
 	}
 
 	componentDidMount() {

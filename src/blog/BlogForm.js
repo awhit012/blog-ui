@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Editor from 'draft-js-plugins-editor';
-import createEmojiPlugin from 'draft-js-emoji-plugin';
 import createLinkPlugin from 'draft-js-anchor-plugin';
 import createToolbarPlugin, { Separator } from 'draft-js-static-toolbar-plugin';
 import HeadlinesButton from '../ui-components/HeadlinesButton';
@@ -16,12 +15,9 @@ import {
   BlockquoteButton,
 } from 'draft-js-buttons';
 import './Blog.css';
-import 'draft-js-emoji-plugin/lib/plugin.css';
 import 'draft-js-static-toolbar-plugin/lib/plugin.css';
 import Button from '@material-ui/core/Button';
 
-const emojiPlugin = createEmojiPlugin();
-const { EmojiSuggestions } = emojiPlugin;
 const linkPlugin = createLinkPlugin();
 const toolbarPlugin = createToolbarPlugin({
   structure: [
@@ -38,7 +34,7 @@ const toolbarPlugin = createToolbarPlugin({
   ]
 });
 
-const plugins = [emojiPlugin, toolbarPlugin, linkPlugin];
+const plugins = [toolbarPlugin, linkPlugin];
 const { Toolbar } = toolbarPlugin;
 
 class BlogForm extends Component {
@@ -66,7 +62,6 @@ class BlogForm extends Component {
 		      	onChange={this.props.onChange}
 		      	ref={(element) => { this.editor = element; }}
 		      	plugins={plugins}/>
-		      	<EmojiSuggestions />
 		      	<div className="toolbar">
 	          	<Toolbar />
 		      	</div>
