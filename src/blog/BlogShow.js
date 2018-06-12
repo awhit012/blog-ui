@@ -7,22 +7,18 @@ import ReactHtmlParser from 'react-html-parser';
 
 class BlogShow extends Component {
   render() {
-    if(this.props.content) {
-      console.log(this.props.content)
-    }
-    
     return (
     	<div className="container">
-  			<ReactImageFallback src={this.props.img}
+  			<ReactImageFallback src={this.props.blog.img}
   				initialImage="/images/loading_icon.gif"
   				fallbackImage="/images/profile2018.png"/>
 		    <div className="blog-right">
-      			<h1>{this.props.title}</h1>
+      			<h1>{this.props.blog.title}</h1>
 	    		<Timestamp 
-	    			time={this.props.timestamp} 
+	    			time={this.props.blog.timestamp} 
 	    			format='date' 
 	    			className="timestamp"/>
-	      	<div className="blog-show">{ReactHtmlParser(this.props.content)}</div>	
+	      	<div className="blog-show">{ReactHtmlParser(this.props.blog.content)}</div>	
 		    </div>
 	    </div>
     );

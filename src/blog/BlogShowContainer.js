@@ -5,18 +5,18 @@ import axios from 'axios';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faHeart from '@fortawesome/fontawesome-free-regular/faHeart';
 import faHeartSolid from '@fortawesome/fontawesome-free-solid/faHeart';
-
+import Divider from '@material-ui/core/Divider';
 
 class BlogShowContainer extends Component {
 	constructor(props) {
 	  super(props);
 	  this.state = {
-	    blog: {},
-	    liked: false,
-	    likes: 0,
+		blog: {},
+		liked: false,
+		likes: 0,
 	  };
 	  this.toggleLike = this.toggleLike.bind(this);
-	  this.baseUrl = 'https://fibrowarriorapi.herokuapp.com/api/v1';
+	  this.baseUrl = 'https://agitated-sammet-4499d9.netlify.com//api/v1';
 	}
 
 	componentDidMount() {
@@ -27,24 +27,24 @@ class BlogShowContainer extends Component {
 		let blogShowContainer = this;
 		axios.get(this.baseUrl + this.props.location.pathname )
 		  .then(function (response) {
-		    blogShowContainer.setState({
-		    	blog: response.data.data
-		    }, () => {
-		    	blogShowContainer.getLikeFromLocalStorage();
-		    	blogShowContainer.setState({
-		    		likes: blogShowContainer.state.blog.likes
-		    	})
-		    })
+			blogShowContainer.setState({
+				blog: response.data.data
+			}, () => {
+				blogShowContainer.getLikeFromLocalStorage();
+				blogShowContainer.setState({
+					likes: blogShowContainer.state.blog.likes
+				})
+			})
 		  })
 		  .catch(function (error) {
-		    console.log(error);
+			console.log(error);
 		  });
 	}
 
 	getLikeFromLocalStorage() {
 	  let liked = localStorage.getItem(this.state.blog._id); 
 	  if (liked) {
-	  	this.setState({liked: true});
+		this.setState({liked: true});
 	  }
 	}
 
@@ -73,7 +73,7 @@ class BlogShowContainer extends Component {
 		let url = this.baseUrl + this.props.location.pathname + likePath
 		axios.put(url)
 			.then(function (response) {
-		  	console.log(response);
+			console.log(response);
 			})
 			.catch( function (error) {
 				console.log(error);
@@ -89,16 +89,20 @@ class BlogShowContainer extends Component {
 	}
 
   render() {
-  	let heart;
-  	this.state.liked ? heart = faHeartSolid : heart = faHeart;
-  	console.log(this.state)
-    return (
-    	<div>
-    		<BlogShow
-					timeStamp  = {this.state.blog.timestamp}
-					img        = {this.state.blog.featuredImage}
-					title      = {this.state.blog.title} 
-					content    = {this.state.blog.content}
+	let heart;
+	this.state.liked ? heart = faHeartSolid : heart = faHeart;
+
+	let citations;
+	if(this.state.blog.citations) {
+	  citations = this.state.blog.citations.map( (citation, index) => {
+		  return <li key={index}><a href={citation}>{citation}</a></li>
+	  })
+	}
+
+	return (
+		<div>
+			<BlogShow
+					blog       = {this.state.blog}
 					toggleLike = {this.toggleLike}
 					liked      = {this.state.liked} />
 				<CategoriesContainer 
@@ -108,9 +112,15 @@ class BlogShowContainer extends Component {
 					&nbsp;
 					{this.state.likes}
 				</span>
-    	</div>
-    	
-    );
+				<Divider className="divider"/>
+				<div className="citations">Citations:
+					<ul>
+				 		{citations}
+					</ul>
+				 </div>
+		</div>
+		
+	);
   }
 }
 

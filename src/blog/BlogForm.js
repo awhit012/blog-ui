@@ -79,6 +79,10 @@ class BlogForm extends Component {
           Image:
           <input type="text" value={this.props.imgUrl} onChange={this.props.handleImgChange} />
         </FormLabel>
+        <FormLabel>
+          Citations:
+          <input type="text" value={this.props.citations} onChange={this.props.handleCitationChange} />
+        </FormLabel>
     		<Button onClick={this.props.handleSubmit}>Post</Button>
     	</div>
     );

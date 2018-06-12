@@ -17,7 +17,7 @@ class BlogFormContainer extends Component {
       categories: [],
       imgUrl: ''
     };
-	  this.postUrl = 'https://fibrowarriorapi.herokuapp.com/api/v1/posts';
+	  this.postUrl = 'https://agitated-sammet-4499d9.netlify.com/api/v1/posts';
 
     this.onChange = this.onChange.bind(this);
     this.handleKeyCommand = this.onChange.bind(this);
@@ -25,7 +25,7 @@ class BlogFormContainer extends Component {
     this.handleTitleChange = this.handleTitleChange.bind(this);
     this.handleCategoryChange = this.handleCategoryChange.bind(this);
     this.handleImgChange = this.handleImgChange.bind(this);
-
+    this.handleCitationChange = this.handleCitationChange.bind(this);
   }
 
   onChange(editorState) {
@@ -51,6 +51,10 @@ class BlogFormContainer extends Component {
 
   handleImgChange(event) {
     this.setState({imgUrl: event.target.value});
+  }
+
+  handleCitationChange(event) {
+    this.setState({citations: event.target.value});
   }
 
   handleSubmit() {
