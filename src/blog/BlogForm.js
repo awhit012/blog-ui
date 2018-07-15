@@ -4,7 +4,6 @@ import createLinkPlugin from 'draft-js-anchor-plugin';
 import createToolbarPlugin, { Separator } from 'draft-js-static-toolbar-plugin';
 import HeadlinesButton from '../ui-components/HeadlinesButton';
 import FormLabel from '@material-ui/core/FormLabel';
-
 import {
   ItalicButton,
   BoldButton,

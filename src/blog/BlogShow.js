@@ -7,7 +7,6 @@ import ReactHtmlParser from 'react-html-parser';
 
 class BlogShow extends Component {
   render() {
-    console.log(this.props.blog)
     return (
     	<div className="container">
   			<ReactImageFallback src={this.props.blog.featuredImage}

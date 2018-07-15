@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Nav, Navbar, NavItem} from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import './NavBar.css';
+const logo = "/images/logo1.svg";
 
 class NavBar extends Component {
   render() {
@@ -10,7 +11,7 @@ class NavBar extends Component {
         <Navbar.Header>
           <Navbar.Brand>
             <LinkContainer to="/">
-                <a>Fibro Warrior | Alpha -- Prerelease</a>
+              <img src={logo} style={{width:100, marginTop: -7}} alt="fibroclarity logo"/>
             </LinkContainer>
           </Navbar.Brand>
           <Navbar.Toggle />
