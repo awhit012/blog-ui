@@ -10,7 +10,7 @@ class HelpItem extends Component {
         <ReactImageFallback className="help-image"
           src={this.props.img}
           initialImage="/images/loading_icon.gif"
-          fallbackImage="/images/profile2018.png"/>
+          fallbackImage="/images/just-logo.png"/>
         <div className="help-right">
           <h1><a>{this.props.name}</a></h1>
           <p>{this.props.description}</p> 
