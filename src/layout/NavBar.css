@@ -4,20 +4,24 @@
 	background: white;
 }
 
-/*#logo {
-	max-height: 100%;
-	height: 400px;
-	margin: none !important;
-	display: inline;
-	height: 100%;
-	max-width: 100% !important;
-	margin-top: 0 !important;
-}*/
-
 .navbar-brand {
 	padding: 1px;
-	max-height: 300px;
+	max-height: 300px;	
+  	cursor: pointer;
 }
-/*.navbar-brand>img {
-  padding: 7px 14px;
-}*/
+
+.navbar-brand > img {
+  display: inline !important;
+  max-height: 2em;
+  vertical-align: middle;
+}
+
+.navbar-brand > img:nth-of-type(2) {
+  padding-left: .8em;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}

@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import {Nav, Navbar, NavItem} from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import './NavBar.css';
-const logo = "/images/logo1.svg";
+const logo = "/images/just-logo.png";
+const companyName = "/images/fibroclarity-font.png";
+
 
 class NavBar extends Component {
   render() {
@@ -10,8 +12,12 @@ class NavBar extends Component {
       <Navbar inverse collapseOnSelect className="nav">
         <Navbar.Header>
           <Navbar.Brand>
+            <span className="helper" />
             <LinkContainer to="/">
-              <img src={logo} style={{width:100, marginTop: -7}} alt="fibroclarity logo"/>
+                <img src={logo} alt="fibroclarity logo"/>
+            </LinkContainer>
+             <LinkContainer to="/">
+                <img src={companyName} alt="fibroclarity"/>
             </LinkContainer>
           </Navbar.Brand>
           <Navbar.Toggle />

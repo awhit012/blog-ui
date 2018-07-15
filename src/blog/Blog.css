@@ -1,4 +1,17 @@
-img {
+a {
+  color: #6277a3;
+}
+
+a:hover {
+  color: #4ab3b5;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #793791;
+}
+
+.blog-img {
 	max-width: 20%;
 	margin-top: 3em;
 	float: left;

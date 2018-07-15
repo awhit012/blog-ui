@@ -18,7 +18,8 @@ class Blog extends Component {
     	<div className="container">
   			<ReactImageFallback src={this.props.img}
   				initialImage="/images/loading_icon.gif"
-  				fallbackImage="/images/profile2018.png"/>
+  				fallbackImage="/images/profile2018.png"
+  				className="blog-img"/>
 		    <div className="blog-right">
 		    	<LinkContainer to={"/posts/" + this.props.id}>
 	      			<h1><a>{this.props.title}</a></h1>
