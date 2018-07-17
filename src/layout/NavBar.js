@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import {Nav, Navbar, NavItem} from 'react-bootstrap';
-import { LinkContainer } from 'react-router-bootstrap';
 import './NavBar.css';
+import {AppBar, Tabs, Tab} from 'material-ui';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
+
 const logo = "/images/just-logo.png";
 const companyName = "/images/fibroclarity-font.png";
 
@@ -9,36 +11,16 @@ const companyName = "/images/fibroclarity-font.png";
 class NavBar extends Component {
   render() {
     return (
-      <Navbar inverse collapseOnSelect className="nav">
-        <Navbar.Header>
-          <Navbar.Brand>
-            <span className="helper" />
-            <LinkContainer to="/">
-                <img src={logo} alt="fibroclarity logo"/>
-            </LinkContainer>
-             <LinkContainer to="/">
-                <img src={companyName} alt="fibroclarity"/>
-            </LinkContainer>
-          </Navbar.Brand>
-          <Navbar.Toggle />
-        </Navbar.Header>
-        <Navbar.Collapse>
-          <Nav pullRight>
-            <LinkContainer to="/">
-              <NavItem>Blog</NavItem>
-            </LinkContainer>
-            <LinkContainer to="/store">
-              <NavItem>Store</NavItem>
-            </LinkContainer>
-            <LinkContainer to="/help">
-              <NavItem>Get Help</NavItem>
-            </LinkContainer>
-            <LinkContainer to="/about">
-              <NavItem>About</NavItem>
-            </LinkContainer>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
+      <MuiThemeProvider>
+        <AppBar title="My App">
+          <Tabs>
+            <Tab label="Blog" />
+            <Tab label="Store" />
+            <Tab label="Get Help" />
+            <Tab label="About" />
+          </Tabs>
+        </AppBar>
+      </MuiThemeProvider>
     );
   }
 }

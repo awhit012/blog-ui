@@ -1,4 +1,27 @@
-[
+[	{"_id": 1984, 
+	  "name": "Pain Management and Restricted Diet Coaching with Alex White", 
+	  "description": "As someone who has battled Fibromyalgia for most of my life, I've long lived with daily pain, fatigue, digestion issues, brain fog, associated depression and anxiety, and a restrictive diet. I've learned that in order to improve my quality of life, I've had to reorganize my life to deal with these issues. I've also learned some healing modalities that really work. I can help you do the same.",
+	  "img": "/images/profile2018.png",
+	  "categories": ["webcam"],
+	  "myTake": "I'll send you a comprehensive survey to fill out about your health and life situation. Then we will follow that up with three, hour-long sessions via Skype. During these sessions we will work to do the following: We will find what in your life brings you pain that we CAN immediately address and remedy. What can we do to improve the quality and comfort of your life right now? What can we do to improve your relationship with food? What can we do to set you on a path to better health? And what can we do to improve your relationship with your pain, your body, and ultimately your self. Message me now for 50% off the regular price of $300 for the survey and 3 sessions!",
+	  "url" : "mailto:alex@fibroclarity.com?subject=1:1%20Coaching"
+	},
+	{"_id": 1111, 
+	  "name": "Dr. Morse's Herbal Health Club", 
+	  "description": "Dr. Morse's Herbal Health Club is a private, members only website and the official provider of Dr. Morse's Cellular Botanicals and God's Herbs products. For over 42 years, Dr. Robert Morse has developed personalized health programs suited for the individual that restore the human body back to health and vitality.",
+	  "img": "https://cdn.shopify.com/s/files/1/0725/6913/t/14/assets/dr-robert-morse.jpg",
+	  "categories": [],
+	  "myTake": "Dr. Morse has a whole different way of looking at health and healing, and so far, I think he's dead on. Instead of handing me pain pills or expensive supplements I can expect to take for the rest of my life, Dr. Morse's is in the business of healing people, including with fibromyalgia. The perscription? A mostly fresh fruit diet and herbs to stimulate the organs, especially the lymph system. I'm working with his clinic right now, and so far, the diet has me feeling better than I have in many years.",
+	  "url" : "https://www.drmorsesherbalhealthclub.com/"
+	},
+	{"_id": 5555, 
+	  "name": "Holistic Treatment with Dr. Lei", 
+	  "description": "Developer of Source Technique, Dr. Lei has been a pioneer in the Chiropractic world, bridging the structural with the emotional and chemical issues that often lie beneath physical pain and dysfunction.  While a student at Northwestern University, Dr. Lei studied biomedical engineering, and while playing Division I collegiate soccer, she gained first-hand experience with the treatment of sports injuries. Graduating as valedictorian with top honors from Life Chiropractic College West, she was a guest teacher for doctoral level classes on several occasions. ",
+	  "img": "http://www.reclaimhealth.org/images/navLogo.gif",
+	  "categories": ["webcam"],
+	  "myTake": "Dr. Lei helped me make my first big leap to better health, by working with me in relation to gut health as well as mental health. I credit Dr. Lei with helping me to truly take responsibility for my own health, and to see the connection between spiritual/ emotional health and physical health.",
+	  "url" : "https://www.reclaimhealth.org/"
+	},
 	{"_id": 1234, 
 	  "name": "uBiome SmartGut", 
 	  "description": "The world’s first sequencing-based clinical microbiome test",
@@ -20,22 +43,7 @@
 	  "description": "Migraine, fibromyalgia, IBS and related conditions display common clinical, biochemical and pathophysiological patterns that suggest an underlying clinical endocannabinoid deficiency that may be suitably treated with cannabinoid medicines. -Neuro Endocrinology Letters, 2008",
 	  "img": "https://static.wixstatic.com/media/1b771c_24900d1d7ddd4042a527b57745fac913~mv2.png/v1/fill/w_170,h_170,al_c,usm_0.66_1.00_0.01/1b771c_24900d1d7ddd4042a527b57745fac913~mv2.png",
 	  "categories": ["supplement", "gut health"],
-	  "myTake": "Medical cannabis has helped me tremendously over the years with pain, insomnia, and even brain fog! This company is located in CA, please make sure your state has legal medical cannabis, and will accept a CA issued recommendation.",
+	  "myTake": "While it might not be for everyone, medical cannabis has helped me tremendously over the years with pain, insomnia, anxiety and even brain fog! This company is located in CA, please make sure your state has legal medical cannabis, and will accept a CA issued recommendation.",
 	  "url" : "https://www.nuggmd.com/"
-	},
-	{"_id": 5555, 
-	  "name": "Holistic Pain Treatment with Dr. Lei", 
-	  "description": "Developer of Source Technique, Dr. Lei has been a pioneer in the Chiropractic world, bridging the structural with the emotional and chemical issues that often lie beneath physical pain and dysfunction.  While a student at Northwestern University, Dr. Lei studied biomedical engineering, and while playing Division I collegiate soccer, she gained first-hand experience with the treatment of sports injuries. Graduating as valedictorian with top honors from Life Chiropractic College West, she was a guest teacher for doctoral level classes on several occasions. ",
-	  "img": "http://www.reclaimhealth.org/images/navLogo.gif",
-	  "categories": ["webcam"],
-	  "myTake": "Dr. Lei helped me make my first big leap to better health, by working with me in relation to gut health as well as mental health. I credit Dr. Lei with helping me to truly take responsibility for my own health, and to see the connection between spiritual/ emotional health and physical health.",
-	  "url" : "https://www.reclaimhealth.org/"
-	},
-	{"_id": 1984, 
-	  "name": "Life Coaching with Alex White", 
-	  "description": "As someone who has battled Fibromyalgia for most of my life, I've long lived with daily pain, fatigue, digestion issues, brain fog, associated depression and anxiety, and a restrictive diet. I've learned that in order to improve my quality of life, I've had to reorganize my life to deal with these issues. I can help you do the same.",
-	  "img": "/images/profile2018.png",
-	  "categories": ["webcam"],
-	  "myTake": "",
-	  "url" : "https://www.smile.amazon.com"
-	}]
+	}
+	]

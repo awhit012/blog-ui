@@ -9,7 +9,6 @@ import StoreItemContainer from './store/StoreItemContainer';
 import About from './pages/About';
 import HelpContainer from './help/HelpContainer';
 
-
 import {
   BrowserRouter as Router,
   Route
