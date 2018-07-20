@@ -6,7 +6,7 @@ class AmazonButton extends Component {
   render() {
     return (
       <div className="button-container">
-        <Button className="amazon-button" variant="outlined" size="small" color="primary">
+        <Button variant="outlined" size="small">
           <a href={this.props.url}>Buy On Amazon</a>
         </Button>
       </div>

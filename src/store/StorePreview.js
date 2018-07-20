@@ -29,13 +29,13 @@ class StorePreview extends Component {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button variant="outlined" size="small" color="primary">
+          <Button variant="outlined" size="small">
             Buy On Amazon
           </Button>
           
 
           <LinkContainer to={"/items/" + this.props.id}>
-	      			<Button variant="outlined" size="small" color="primary">
+	      			<Button className="Button" variant="outlined" size="small">
             		Learn More
          		  </Button>
       		</LinkContainer>

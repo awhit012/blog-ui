@@ -19,7 +19,7 @@ class StoreItem extends Component {
           <p>{this.props.myTake}</p>
         </div>
         <div>
-          <AmazonButton url={this.props.url} variant="outlined" size="small" color="primary">
+          <AmazonButton url={this.props.url} variant="outlined" size="small">
             Buy On Amazon
           </AmazonButton>
           <Panel bsStyle="info" className="panel">
