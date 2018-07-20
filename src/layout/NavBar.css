@@ -4,14 +4,14 @@
 
 .Company-Name {
   height: 50px;
-  padding-left: .8em;
+  margin: -7px 0 0 -2px;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 60s linear;
   height: 40px;
   /*padding-left: 1em;*/
-  margin: 1em;
+  margin: 10px 1em 1em 1em;
 }
 
 .App-Bar {

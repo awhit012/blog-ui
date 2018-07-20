@@ -9,7 +9,7 @@ class About extends Component {
   render() {
     return (
     <div>
-	  	<h2>Welcome to Fibro Warrior!</h2>
+	  	<h2>Welcome to Fibro Clarity!</h2>
 		<ReactImageFallback className="profile-image"
             fallbackImage="/images/profile2018.png"
 			src="/images/profile2018.png"
