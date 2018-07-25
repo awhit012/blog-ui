@@ -1,22 +1,16 @@
 import React, { Component } from 'react';
 import BlogPreview from './BlogPreview';
-import axios from 'axios';
+import BlogPosts from './BlogPosts.json'
 import Button from '@material-ui/core/Button';
 import CategoriesContainer from '../ui-components/CategoriesContainer';
 import CategoriesMenu from '../ui-components/CategoriesMenu';
 import {getCategories, filterByCategory} from '../Helper.js'
 import './Blog.css';
 
-const noBlog = {
-	title: "An Error has occured.",
-	content: "Please check back with us soon, we are working hard on a solution."
-}
-
 class BlogIndexContainer extends Component {
 	constructor(props) {
 	  super(props);
 	  this.state = {
-	    allBlogs: [],
 	    blogs: [],
 	    categories: []
 	  };
@@ -26,24 +20,8 @@ class BlogIndexContainer extends Component {
 	}
 
 	componentDidMount() {
-		let blogIndexContainer = this;
-		axios.get('https://fibrowarriorapi.herokuapp.com/api/v1/posts')
-		  .then(function (response) {
-		  	let blogs = response.data.data
-		    blogIndexContainer.setState({
-		    	allBlogs: blogs,
-		    	blogs: blogs, 
-		    	categories: getCategories(blogs)
-		    }, () => {
-		  		blogIndexContainer.orderByDate();
-		    });
-		  })
-		  .catch(function (error) {
-		    console.log(error);
-		    blogIndexContainer.setState({
-		    	blogs: [noBlog]
-		    })
-		  });
+		this.setState({blogs: BlogPosts})
+		this.setState({categories: getCategories(BlogPosts)});
 	}
 
 	orderByDate() {
@@ -63,7 +41,7 @@ class BlogIndexContainer extends Component {
 	}
 
 	handleFilterClick(category) {
-    this.setState({blogs: filterByCategory(category, this.state.allBlogs)});
+    this.setState({blogs: filterByCategory(category, this.state.blogs)});
   }
 
   render() {

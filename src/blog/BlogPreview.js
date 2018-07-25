@@ -29,9 +29,6 @@ class Blog extends Component {
 	    			format='date' 
 	    			className="timestamp"/>
 	      		<div>{ReactHtmlParser(preview)}</div>
-	      		<FontAwesomeIcon icon={faHeartSolid} onClick={this.toggleLike}/>
-				&nbsp;
-				{this.props.likes}	
 		    </div>
 	    </div>
     );
