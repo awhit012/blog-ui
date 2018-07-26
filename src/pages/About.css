@@ -12,3 +12,8 @@
 .container {
 	margin-top: 2em;
 }
+
+.bold {
+	font-weight: bold;
+	font-style: italic;
+}

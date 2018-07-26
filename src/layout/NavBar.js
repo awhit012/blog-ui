@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './NavBar.css';
+import './Layout.css';
 import {AppBar, Tabs, Tab} from 'material-ui';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import * as Colors from 'material-ui/styles/colors';
