@@ -25,7 +25,7 @@ class BlogIndexContainer extends Component {
 	}
 
 	orderByDate() {
-		let blogIndexContainer = this;
+	  let blogIndexContainer = this;
 	  let orderedPosts = blogIndexContainer.state.blogs.slice().sort(function (a, b) {
 	    return a['timestamp'] > b['timestamp'] ? -1 : 1;
 	  });
@@ -41,7 +41,7 @@ class BlogIndexContainer extends Component {
 	}
 
 	handleFilterClick(category) {
-    this.setState({blogs: filterByCategory(category, this.state.blogs)});
+    this.setState({blogs: filterByCategory(category, BlogPosts)});
   }
 
   render() {
