@@ -44,7 +44,7 @@ class BlogIndexContainer extends Component {
 	}
 
 	getLikes() {
-		const likeCountRef = firebase.database().ref('/');
+		const likeCountRef = database.ref('/');
 		let blogShowContainer = this;
 		likeCountRef.on('value', function(snapshot) {
 		  blogShowContainer.mapLikesToBlogs(snapshot.val())

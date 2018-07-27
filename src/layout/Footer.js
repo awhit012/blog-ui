@@ -20,7 +20,7 @@ function Footer(props) {
       <AppBar position="static" color="default">
         <Toolbar>
           <Typography variant="title" color="inherit">
-            <a href="https://www.instagram.com/fibroclarity" target="_blank"><FaInstagram size={30} className="Insta"/></a>
+            <a href="https://www.instagram.com/fibroclarity" target="_blank" rel="noopener noreferrer"><FaInstagram size={30} className="Insta"/></a>
             <small>Contact: alex@fibroclarity.com | This website is not meant to serve as medical advice, but is for your health education purposes only.</small>
           </Typography>
         </Toolbar>

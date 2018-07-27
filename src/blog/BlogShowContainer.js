@@ -31,15 +31,18 @@ class BlogShowContainer extends Component {
 	  this.state = {
 			blog: {},
 			liked: false,
-			likes: 0,
+			likes: null,
 			id: 0
 	  };
 	  this.toggleLike = this.toggleLike.bind(this);
-	  this.baseUrl = 'https://fibrowarriorapi.herokuapp.com/api/v1';
 	}
 
 	componentDidMount() {
 		this.getBlog();
+	}
+
+	componentWillUnmount() {
+    this.likeCountRef.off();
 	}
 
 	getBlog() {
@@ -48,16 +51,16 @@ class BlogShowContainer extends Component {
 		let blog = BlogPosts.filter(blog => {
 		  return blog._id === id
 		})
-		this.setState({blog: blog[0], id: id}, () => { this.getLikes() }) 
+		this.likeCountRef = database.ref('/' + id);
+		this.setState({blog: blog[0], id: id}, () => { 
+			this.getLikes();
+		}) 
 	}
 
 	getLikes() {
 		this.getLikeFromLocalStorage();
-
-		const likeCountRef = firebase.database().ref('/' + this.state.id);
-
 		let blogShowContainer = this;
-		likeCountRef.on('value', function(snapshot) {
+		this.likeCountRef.on('value', function(snapshot) {
 		  console.log("fire", snapshot.val());
 		  blogShowContainer.setState({likes: snapshot.val()})
 		});
@@ -90,16 +93,9 @@ class BlogShowContainer extends Component {
 	}
 
 	putLike(liked) {
-		const likeCountRef = firebase.database().ref('/' + this.state.id);
-
-		let currentLikes = this.state.likes
-		likeCountRef.transaction(function(currentLikes) {
-		  // If node/clicks has never been set, currentRank will be `null`.
-		  if(liked) {
-		  	return (currentLikes || 0) + 1;
-		  } else {
-		  	return (currentLikes || 0) - 1;
-		  }
+		let currentLikes = this.state.likes;
+		this.likeCountRef.transaction(function() {
+	  	return (currentLikes || 0);
 		});
 	}
 
