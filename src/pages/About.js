@@ -42,7 +42,7 @@ class About extends Component {
 		</p>
 
 		<p className="container jumbo-bottom">
-			Because I know what it is to live with Fibromyalgia, it is important to me that this site not just provide free, quality information, but also give back monetarily. That's why I donate 5% of our commissions to <a href="http://www.afsafund.org/">The American Fibromyalgia Syndrome Association</a>.
+			Because I know what it is to live with Fibromyalgia, it is important to me that this site not just provide free, quality information, but also give back monetarily. That's why I donate 10% of our commissions to <a href="https://www.drmorsesherbalhealthclub.com/">The Dr. Morse Herbal Health Club</a> Financial Aide fund to help people get the care they need regardless of their financial situation.
 		</p>
     </div>	
     
