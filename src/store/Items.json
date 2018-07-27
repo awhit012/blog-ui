@@ -3,7 +3,7 @@
 	  "description": "So far the best thing of all has been eating lots of fresh fruit!",
 	  "img": "https://c1.staticflickr.com/3/2281/2409582661_22387a9d53_z.jpg?zz=1",
 	  "categories": ["foods", "gut health", "quality of life"],
-	  "myTake": "Fresh fruit is living and energetic and is the healthiest food on the planet. When we eat protein, our body has to break it down into amino acids, and then sythesize protein from them. Fruit contains amino acids that our body can use to create protein! Humans are primates, and every other primate species on the planet eats 80%+ fruit. And just look how huge and muscular chimps and gorillas get! Dr. Robert Morse advocates for a mostly fruit diet, and fruit cleanses to heal the body. I've been eating mostly fruit for 3 weeks, as of this writing, and feel better than I have in years.",
+	  "myTake": "Fresh fruit is living and energetic and is the healthiest food on the planet. When we eat protein, our body has to break it down into amino acids, and then synthesize protein from them. Fruit contains amino acids that our body can use to create protein! Humans are primates, and every other primate species on the planet eats 80%+ fruit. And just look how huge and muscular chimps and gorillas get! Dr. Robert Morse advocates for a mostly fruit diet, and fruit cleanses to heal the body. I've been eating mostly fruit for 3 weeks, as of this writing, and feel better than I have in years.",
 	  "url" : "https://www.smile.amazon.com"
 	},
 	{"_id": 2, 
@@ -43,15 +43,15 @@
 	  "description": "Host Defense - Lion's Mane Mushroom Extract, Natural Support for Mental Clarity, Focus, Memory, Cerebral and Nervous System Health, Non-GMO, Vegan, Organic, 60 Serving (2 Ounces)",
 	  "img": "https://images-na.ssl-images-amazon.com/images/I/71kDA8iEILL._SY355_.jpg",
 	  "categories": ["supplements", "alternative medicine"],
-	  "myTake": "I've been taking Lions Mane for about 6 months (as of this writing) and it is amazing. I have felt a small but noticable increase in ability to focus, a decrease in anxiety, and best of all, a significant decrease in brain fog! I hesititate to say it cured my brain fog, but I would go as far as to say that Lion's Mane has played a huge role in making brain fog a rarity, where it used to be a normal part of every week. There are several brands out there, and many might be good, but Host Defence is owned by Paul Stamets, the godfather of mushrooms as medicine. I have personally used this brand to great effect, and it makes me happy to promote a product made by one of the true pioneers of this kind of medicine.",
+	  "myTake": "I've been taking Lions Mane for about 6 months (as of this writing) and it is amazing. I have felt a small but noticeable increase in ability to focus, a decrease in anxiety, and best of all, a significant decrease in brain fog! I hesitate to say it cured my brain fog, but I would go as far as to say that Lion's Mane has played a huge role in making brain fog a rarity, where it used to be a normal part of every week. There are several brands out there, and many might be good, but Host Defense is owned by Paul Stamets, the godfather of mushrooms as medicine. I have personally used this brand to great effect, and it makes me happy to promote a product made by one of the true pioneers of this kind of medicine.",
 	  "url" : "https://www.smile.amazon.com/dp/B0062AL9Y8/ref=sxts_srecs_heropb_3_s_it"
 	},
 	{"_id": 7, 
-	  "name": "Hymalain Pink Salt", 
-	  "description": "Sherpa Pink Himalayan Salt, 2lbs Extra-Fine Grain",
+	  "name": "Himalayan Pink Salt", 
+	  "description": "Sherpa Pink Himalayan Salt, 2 lbs Extra-Fine Grain",
 	  "img": "https://images-na.ssl-images-amazon.com/images/I/71IrwIB0OvL._SY550_.jpg",
 	  "categories": ["foods"],
-	  "myTake": "Processed table salt is missing tons of vital minerals, and is ground to death. Pink salt is full of great minerals, and is still holding its natural crystiline form. Plus it looks beautiful, and it's a lot less expensive than it used to be.",
+	  "myTake": "Processed table salt is missing tons of vital minerals, and is ground to death. Pink salt is full of great minerals, and is still holding its natural crystalline form. Plus it looks beautiful, and it's a lot less expensive than it used to be.",
 	  "url" : "https://www.smile.amazon.com/Himalayan-Hymalain-Dimmable-UL-Listed-Original/dp/B06XX595NL/ref=sr_1_4?s=furniture&ie=UTF8&qid=1527877512&sr=1-4&keywords=salt%2Blamp&th=1"
 	},
 	{"_id": 8, 
@@ -75,7 +75,7 @@
 	  "description": "Viva Naturals #1 Best Selling Certified Organic Cacao Powder from Superior Criollo Beans, 1 LB Bag",
 	  "img": "https://images-na.ssl-images-amazon.com/images/I/71Bcxq%2BmkIL._SY550_.jpg",
 	  "categories": ["foods", "gut health"],
-	  "myTake": "Full of magnesium, potassium, and iron, this super food tastes great, and packs a punch of vital nutrition. Besides, it flippin' delicious. One beautiful step you can take to improving your health is eating raw cacao based chocolate treats instead of processed chocolate candies. A spoonful of this in coconut milk makes an amazing hot chocolate, for example.",
+	  "myTake": "Full of magnesium, potassium, and iron, this super food tastes great, and packs a punch of vital nutrition. Besides, it really delicious. One beautiful step you can take to improving your health is eating raw cacao based chocolate treats instead of processed chocolate candies. A spoonful of this in coconut milk makes an amazing hot chocolate, for example.",
 	  "url" : "https://smile.amazon.com/Viva-Naturals-Selling-Certified-Superior/dp/B00HES9CMS/ref=sr_1_5_s_it?s=hpc&ie=UTF8&qid=1528322632&sr=1-5&keywords=cacao+powder"
 	},
 	{"_id": 11, 
@@ -99,7 +99,7 @@
 	  "description": "16 oz. Sustainably Grown Canadian Hempseed, –Cold-Processed Seed from Non GMO (50% Protein). Organic Hemp Protein",
 	  "img": "https://images-na.ssl-images-amazon.com/images/I/61BjDuohViL._SY679_.jpg",
 	  "categories": ["foods", "supplements", "gut health"],
-	  "myTake": "OK, the biggest myth in the world today is that the human body needs protein. The human digestive system cannot even absorb it! When you eat protein, your body breaks it down into amino acids, and then uses those amino acids to build human protein usable by the body! Fruit contains all the amino acids your body needs! But, it's hard to get people to eat this way, and if you feel you need a protein supplement, hemp protein is absolutely fantastic. The world is full of protein powders and most of them destroy my digestion! Whey based especially. When I first found hemp protein powder, it improved my life considerably. It is easy to digest, in fact it feels great in my body. It even tastes pretty good! It also packs a considerable ammount of fiber, and an amazing amount of vitimins and micro-nutrients to boot! This brand is great, although there are a few other brands which are just as good. Just look for any that includes only one ingredient: hemp.",
+	  "myTake": "OK, the biggest myth in the world today is that the human body needs protein. The human digestive system cannot even absorb it! When you eat protein, your body breaks it down into amino acids, and then uses those amino acids to build human protein usable by the body! Fruit contains all the amino acids your body needs! But, it's hard to get people to eat this way, and if you feel you need a protein supplement, hemp protein is absolutely fantastic. The world is full of protein powders and most of them destroy my digestion! Whey based especially. When I first found hemp protein powder, it improved my life considerably. It is easy to digest, in fact it feels great in my body. It even tastes pretty good! It also packs a considerable amount of fiber, and an amazing amount of vitamins and micro-nutrients to boot! This brand is great, although there are a few other brands which are just as good. Just look for any that includes only one ingredient: hemp.",
 	  "url" : "https://www.smile.amazon.com"
 	},
 	{"_id": 14, 
@@ -107,7 +107,7 @@
 	  "description": "1(Rainbow Coded), by Inner Light Resources Wall Chart – November 20, 2006. Also known as \"Eye Reflexology\", this amazingly useful chart illustrates the places in the iris of the eye that show the health and healing condition of every organ and system of our body- mother nature's precise assessment tool.",
 	  "img": "https://images-na.ssl-images-amazon.com/images/I/61Yp3PsxxeL.jpg",
 	  "categories": ["foods", "supplements", "gut health"],
-	  "myTake": "I got my eye read and this is fascinating stuff! This chart can help you examin your own eye and see where you need to detox most.",
+	  "myTake": "I got my eye read and this is fascinating stuff! This chart can help you examine your own eye and see where you need to detox most.",
 	  "url" : "https://www.smile.amazon.com"
 	},
 	{"_id": 15, 
@@ -123,23 +123,23 @@
 	  "description": "A versatile prebiotic formula to optimize gut microbiota and support bowel and immune system function.",
 	  "img": "https://images-na.ssl-images-amazon.com/images/I/71cC8RCa0AL._SY450_.jpg",
 	  "categories": ["gut health", "supplements"],
-	  "myTake": "Prebiotic's feed the good bacteria in our guts. I started taking this brand after it was recommended by my nutritionist, and it definitely has helped. The best thing you can do for your gut health is to eat a mostly fruit diet, expecially melons and berries, which will naturally encourage our gut flora. But for a less drastic change (and improvement) prebiotics can be added to a healthy diet and absolutely improve your digestion.",
+	  "myTake": "Prebiotics feed the good bacteria in our guts. I started taking this brand after it was recommended by my nutritionist, and it definitely has helped. The best thing you can do for your gut health is to eat a mostly fruit diet, especially melons and berries, which will naturally encourage our gut flora. But for a less drastic change (and improvement) prebiotics can be added to a healthy diet and absolutely improve your digestion.",
 	  "url" : "https://smile.amazon.com/Klaire-Labs-Biotagen-Powder-5-3/dp/B005T59Z6G/ref=sr_1_3_s_it?s=hpc&ie=UTF8&qid=1528322459&sr=1-3&keywords=prebiotic&refinements=p_89%3AKlaire+Labs"
 	},
 	{"_id": 17, 
-	  "name": "Nayoya Accupressure Mat", 
+	  "name": "Nayoya Acupressure Mat", 
 	  "description": "Nayoya Back and Neck Pain Relief - Acupressure Mat and Pillow Set - Relieves Stress, Back, Neck, and Sciatic Pain - Comes with a Vinyl Carry Bag for Storage and Travel - As Seen in USA Today",
 	  "img": "https://images-na.ssl-images-amazon.com/images/I/81f-7abDKfL._SX522_.jpg",
 	  "categories": ["pain relief", "alternative medicine", "physical goods"],
-	  "myTake": "As I'm writing this, I have my mat on the back of my chair and I am leaning on it without a shirt on. The pokey points on are pressing into my skin just not quite enough to hurt, but enough to trigger my bodies endorphin response. That is how accupressure works! This mat is very versitile. You can put clothing in between you and the points if the pressure is too much. I like to stand on it in bare feet while I do things like brush my teeth. I often will put my legs across it when laying in bed. I can say this is one of my favorite purchases of the last year. It really does help me to feel less pain while you proceed on your healing journey.",
+	  "myTake": "As I'm writing this, I have my mat on the back of my chair and I am leaning on it without a shirt on. The pokey points on are pressing into my skin just not quite enough to hurt, but enough to trigger my bodies endorphin response. That is how acupressure works! This mat is very versatile. You can put clothing in between you and the points if the pressure is too much. I like to stand on it in bare feet while I do things like brush my teeth. I often will put my legs across it when laying in bed. I can say this is one of my favorite purchases of the last year. It really does help me to feel less pain while you proceed on your healing journey.",
 	  "url" : "https://www.smile.amazon.com"
 	},
 	{"_id": 18, 
-	  "name": "Hymalain Pink Salt Rock Lamps", 
-	  "description": "Hymalain Pink Salt Rock Lamps(11-15 lbs,8.5-11\" Height) with Genuine Rubber Wood Base, Touch Dimmer Switch, 3 X 15 Watt Bulbs,UL Cord & Gift Box",
+	  "name": "Himalayan Pink Salt Rock Lamps", 
+	  "description": "Himalayan Pink Salt Rock Lamps(11-15 lbs,8.5-11\" Height) with Genuine Rubber Wood Base, Touch Dimmer Switch, 3 X 15 Watt Bulbs,UL Cord & Gift Box",
 	  "img": "https://m.media-amazon.com/images/I/41FGZ9lT23L._AC_SX220_.jpg",
 	  "categories": ["physical goods", "quality of life"],
-	  "myTake": "This is definitely lower priority if you are on a budget, but these lamps can do a lot to make a room more pleasant to be in. It's been shown that these beautiful lamps can pull dust and allergens out of the air. They also produce negatively charged ions, but as far as I can tell the jury is still out on if they produce enought to have a benefit. There is speculation that they can relieve headaches, stress, and do other fabulous things too! But one thing is absolutely certain, they are beautiful and create a calm, tranquil atmosphere. When our bodies themselves are sometimes very unpleasant places to be in, I believe it is even more important for people with chronic pain to make their homes as comfortable and pleasant as possible. These lamps do a lot towards that end! I certainly love mine!",
+	  "myTake": "This is definitely lower priority if you are on a budget, but these lamps can do a lot to make a room more pleasant to be in. It's been shown that these beautiful lamps can pull dust and allergens out of the air. They also produce negatively charged ions, but as far as I can tell the jury is still out on if they produce enough to have a benefit. There is speculation that they can relieve headaches, stress, and do other fabulous things too! But one thing is absolutely certain, they are beautiful and create a calm, tranquil atmosphere. When our bodies themselves are sometimes very unpleasant places to be in, I believe it is even more important for people with chronic pain to make their homes as comfortable and pleasant as possible. These lamps do a lot towards that end! I certainly love mine!",
 	  "url" : "https://www.smile.amazon.com/Himalayan-Hymalain-Dimmable-UL-Listed-Original/dp/B06XX595NL/ref=sr_1_4?s=furniture&ie=UTF8&qid=1527877512&sr=1-4&keywords=salt%2Blamp&th=1"
 	}
 ]
