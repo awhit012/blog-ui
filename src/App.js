@@ -1,3 +1,5 @@
+/*global firebase*/
+
 import React, { Component } from 'react';
 import './App.css';
 import NavBar from './layout/NavBar';

@@ -1,3 +1,5 @@
+/*global firebase*/
+
 import React, { Component } from 'react';
 import BlogPreview from './BlogPreview';
 import BlogPosts from './BlogPosts.json'
@@ -6,6 +8,22 @@ import CategoriesContainer from '../ui-components/CategoriesContainer';
 import CategoriesMenu from '../ui-components/CategoriesMenu';
 import {getCategories, filterByCategory} from '../Helper.js'
 import './Blog.css';
+
+const config = {
+  apiKey: "AIzaSyAns4julfcyHTu_5QnnEPO2fFlH0hESHYM",
+  authDomain: "fibroclarity.firebaseapp.com",
+  databaseURL: "https://fibroclarity.firebaseio.com",
+  projectId: "fibroclarity",
+  storageBucket: "fibroclarity.appspot.com",
+  messagingSenderId: "473593075804"
+};
+
+if (!firebase.apps.length) {
+	firebase.initializeApp(config);
+}
+
+const database = firebase.database();
+
 
 class BlogIndexContainer extends Component {
 	constructor(props) {
@@ -22,6 +40,22 @@ class BlogIndexContainer extends Component {
 	componentDidMount() {
 		this.setState({blogs: BlogPosts})
 		this.setState({categories: getCategories(BlogPosts)});
+		this.getLikes();
+	}
+
+	getLikes() {
+		const likeCountRef = firebase.database().ref('/');
+		let blogShowContainer = this;
+		likeCountRef.on('value', function(snapshot) {
+		  blogShowContainer.mapLikesToBlogs(snapshot.val())
+		});
+	}
+
+	mapLikesToBlogs(likesObject) {
+		this.state.blogs.forEach( (blog, index, blogsArray) => {
+			blogsArray[index].likes = likesObject[blog._id];
+		})
+		 this.forceUpdate();
 	}
 
 	orderByDate() {
@@ -34,7 +68,7 @@ class BlogIndexContainer extends Component {
 
 	orderByLikes() {
 		let blogIndexContainer = this;
-	  let orderedPosts = blogIndexContainer.state.blogs.slice().sort(function (a, b) {
+  	let orderedPosts = blogIndexContainer.state.blogs.slice().sort(function (a, b) {
 	    return a['likes'] > b['likes'] ? -1 : 1;
 	  });
 	  this.setState({blogs: orderedPosts})
