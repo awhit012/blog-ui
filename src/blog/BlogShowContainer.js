@@ -6,7 +6,6 @@ import CategoriesContainer from '../ui-components/CategoriesContainer';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import faHeart from '@fortawesome/fontawesome-free-regular/faHeart';
 import faHeartSolid from '@fortawesome/fontawesome-free-solid/faHeart';
-import Divider from '@material-ui/core/Divider';
 import BlogPosts from './BlogPosts.json'
 
 const config = {
@@ -131,7 +130,6 @@ class BlogShowContainer extends Component {
 				</span>
 				<CategoriesContainer 
 					categories = {this.state.blog.categories}/>
-				<Divider className="divider"/>
 				<div className="citations">Citations:
 					<ul>
 				 		{citations}
