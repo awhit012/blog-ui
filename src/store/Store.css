@@ -1,8 +1,8 @@
 .card {
-	max-width: 345px;
 	display: inline-block !important;
 	text-align:center;
 	height: 300px;
+	margin: 3em !important;
 }	
 
 .media {
@@ -64,4 +64,12 @@
 
 .MuiButton-outlined-5 {
     border: 1px solid #6277a3 !important;
+}
+
+
+@media only screen and (max-width: 650px)  {
+  .card {
+		width: 80% !important;
+		height: 250px;
+	}	
 }

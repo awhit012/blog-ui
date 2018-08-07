@@ -112,3 +112,16 @@ h1, h2, h3, h4, h5, h6 {
 .divider {
 	margin: 2em !important;
 }
+
+@media only screen and (max-width: 650px)  {
+  .blog-img {
+    display: block;
+    clear: both;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .blog-right {
+		width: 100%;
+	}
+}
