@@ -5,6 +5,7 @@
 .Company-Name {
   height: 50px;
   margin: -7px 0 0 -2px;
+  display: inline;
 }
 
 .App-logo {
@@ -24,4 +25,10 @@
 
 .Insta {
 	margin-right: 2em;
+}
+
+@media only screen and (max-width: 650px)  {
+  .Company-Name {
+    display: none;
+  }
 }
