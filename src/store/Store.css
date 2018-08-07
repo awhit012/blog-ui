@@ -46,7 +46,7 @@
 .item-img {
 	width: 20%;
 	float: left;
-    margin-top: 2em;
+  margin-top: 2em;
 }
 
 .panel {
@@ -72,4 +72,27 @@
 		width: 80% !important;
 		height: 250px;
 	}	
+	.media {
+		max-width: 100%;
+		max-height: 100px;
+		/*float: left;*/
+	  margin-top: 2em;
+	}
+
+	.item-img {
+		display: block;
+    clear: both;
+    width: 100%;
+		max-width: 100%;
+		float: left;
+	  margin-top: 2em;
+	}
+	.panel {
+		width: 100% !important;
+		clear: both;
+	}
+
+	.store-right {
+		width: 100%;
+	}
 }
