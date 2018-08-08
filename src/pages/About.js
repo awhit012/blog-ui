@@ -17,32 +17,32 @@ class About extends Component {
 
 
 		<p className="container">
-			I'm not a medical expert, I'm a teacher, web developer, traveler, writer and husband. I got diagnosed with Fibromyalgia a few years ago, but have been battling severe muscle tightness and pain, digestive issues, and chronic fatigue since I was a child. 
+			I'm a teacher, web developer, traveler, writer, healing and health researcher, and husband. I got diagnosed with Fibromyalgia a few years ago, but have been battling severe muscle tightness and pain, digestive issues, and chronic fatigue since I was a child. 
 	  	</p>
 		<p className="container">
-	    	Although I'm still on my healing journey, I've learned a ton in the process, especially since I became a patient at <a href="https://www.drmorsesherbalhealthclub.com/">Dr. Robert Morse's</a> clinic. His approach to health and the human body has been a complete game-changer for me. Between his teachings, and everything I learned in the years before, I have a wealth of knowledge I want to share with you. Given my own completely unhelpful experiences with a traditional doctor, I find the mission of sharing this information to be quite urgent. 
-	  	</p>
-		<p className="container">
-	    	Today as I write this, I feel SO MUCH BETTER than I did just a year ago. This site is dedicated to sharing information and resources that has helped me personally with anyone else who is suffering from Fibromyalgia, Chronic Fatigue, Chronic Pain, LBS, IBS, or even people like me who have very limiting dietary restrictions. If I can help just a couple of people improve their quality of life, that's a huge win!
+	    	Although I'm still on my healing journey, I've learned a ton in the process, especially since I became a patient at <a href="https://www.drmorsesherbalhealthclub.com/">Dr. Robert Morse's</a> clinic. His approach to health and the human body has been a complete game-changer for me. But its far from the only game changing knowledge I've come across. I have a wealth of knowledge I want to share with you. Given my own completely unhelpful experiences with a traditional doctor, I find the mission of sharing this information to be quite urgent. 
 	  	</p>
 	  	<p className="container">
-			This site here to offer a different perspective on Fibromyalgia. One that is: 
+	  		However, more important than any of the knowledge I want to share, this project is dedicated to inspiring people to take control of their healing journey. To not accept that they have to live their entire lives in pain, and to experiment, and fight, and find a way to heal. To find a path to living their best life. 
+	  	</p>
+		<p className="container">
+	    	Today as I write this, I feel SO MUCH BETTER than I did just a year ago. It is much because of applying the knowledge I have learned, but I only got here by refusing to accept that I can't overcome this. If you are here, you aren't accepting this either. Excellent. Welcome! 
+	  	</p>
+	  	<p className="container">
+			There are not a ton of resources out there for people with Fibromyalgia. This site intends to not only provide quality information and inspiration, but also a different perspective on Fibromyalgia. One that is: 
 	  	</p>
 
-  		<p className="container bold">Encouraging, not discouraging</p>
-  		<p className="container bold">Focused on improving health, not treating symptoms</p>
-  		<p className="container bold">Embracing of Dr. Robert Morse's view of Fibromyalgia as systemic acidosis</p>
-  		<p className="container bold">Seeks to improve life holistically to help people change their health and their lives</p>
-	  	
+  		<p className="container bold">Encouraging and empowering, not discouraging and disempowering</p>
+  		<p className="container bold">Focused on healing, not treating symptoms</p>
 
 		<h2>How it works</h2>
 		
 		<p className="container">
-			This site is, and always will be, free and open to the public. To pay the bills and support what I'm doing, I use <a href="https://affiliate-program.amazon.com/">Amazon Affiliate Marketing</a> links. If you click through a link on our site, and buy something on Amazon.com, you pay the same low price as always, and we receive a modest commission for bringing customers to Amazon! 
+			This site is, and always will be, free and open to the public. To pay the bills and support what I'm doing, I use <a href="https://affiliate-program.amazon.com/">Amazon Affiliate Marketing</a> links. If you click through a link on our site, and buy something on Amazon.com, you pay the same low price as always, and we receive a modest commission for bringing customers to Amazon! If I'm ever getting paid to promote a specific product, it will be one that I use and love, and I will make it clear that this is the arrangement. 
 		</p>
 
 		<p className="container jumbo-bottom">
-			Because I know what it is to live with Fibromyalgia, it is important to me that this site not just provide free, quality information, but also give back monetarily. That's why I donate 10% of our commissions to <a href="https://www.drmorsesherbalhealthclub.com/">The Dr. Morse Herbal Health Club</a> Financial Aide fund to help people get the care they need regardless of their financial situation.
+			Because I know what it is to live with chronic illness, it is important to me that this site give back monetarily. That's why I donate 10% of our commissions to <a href="https://www.drmorsesherbalhealthclub.com/">The Dr. Morse Herbal Health Club</a> Financial Aide fund to help people get the care they need regardless of their financial situation.
 		</p>
     </div>	
     
