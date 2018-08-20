@@ -31,7 +31,7 @@ class Blog extends Component {
 	      		<div>{ReactHtmlParser(preview)}</div>
             <FontAwesomeIcon icon={faHeartSolid} onClick={this.toggleLike}/>
               &nbsp;
-              {this.props.likes}
+              {this.props.likes || ""}
 		    </div>
 	    </div>
     );
