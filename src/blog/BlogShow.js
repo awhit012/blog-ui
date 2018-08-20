@@ -12,6 +12,7 @@ class BlogShow extends Component {
   			<ReactImageFallback src={this.props.blog.featuredImage}
   				initialImage="/images/loading_icon.gif"
   				fallbackImage="/images/profile2018.png"
+          initialTimeout="10000"
           className="blog-img"/>
 		    <div className="blog-right">
       			<h1>{this.props.blog.title}</h1>
