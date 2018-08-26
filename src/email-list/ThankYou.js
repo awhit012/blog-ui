@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 const logo = "/images/just-logo.png";
 
 
-class BlogShow extends Component {
+class ThankYou extends Component {
   constructor() {
     super();
     this.setSubscribed();
@@ -28,7 +28,7 @@ class BlogShow extends Component {
   }
 }
 
-export default BlogShow;
+export default ThankYou;
 
 
 
