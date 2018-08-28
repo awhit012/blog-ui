@@ -39,7 +39,9 @@ class BlogIndexContainer extends Component {
 
 	componentDidMount() {
 		this.setState({blogs: BlogPosts})
-		this.setState({categories: getCategories(BlogPosts)});
+		this.setState({categories: getCategories(BlogPosts)}, 
+			() => this.orderByDate()
+		);
 		this.getLikes();
 	}
 
